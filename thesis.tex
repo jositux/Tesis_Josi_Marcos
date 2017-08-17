@@ -47,9 +47,11 @@
 \fancypagestyle{plain}{
 	\fancyhf{}
 	% Add "DRAFT: <today's date>" to header (comment out the following to remove)
-	\lhead{\textit{DRAFT: \today}}
+	%\lhead{\textit{DRAFT: \today}}
 	%
-	\chead{\thepage}
+	%\chead{\thepage}
+	\rhead{Tesis Josi Marcos}
+    \cfoot{Página \thepage}
 	\renewcommand{\headrulewidth}{0pt}
 }
 \pagestyle{plain}
@@ -80,7 +82,7 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % PREAMBLE: roman page numbering i, ii, iii, ...
-\pagenumbering{roman}
+%\pagenumbering{roman}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
@@ -165,6 +167,7 @@ Universidad Gastón Dachary 2017\\
 \small\normalsize
 % SUMMARY HERE (300 word limit for most subjects):
 
+\thispagestyle{empty}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
@@ -175,6 +178,7 @@ Universidad Gastón Dachary 2017\\
 \small\normalsize
 % ACKNOWLEDGEMENTS HERE:
 
+\thispagestyle{empty}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
@@ -191,7 +195,7 @@ Universidad Gastón Dachary 2017\\
 %\addcontentsline{toc}{chapter}{List of Figures}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-
+\thispagestyle{empty}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % MAIN THESIS TEXT: arabic page numbering 1, 2, 3, ...
 \newpage

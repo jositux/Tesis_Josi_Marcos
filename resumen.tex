@@ -3,29 +3,19 @@
 %-----------------------------------------------------
 \addcontentsline{toc}{section}{Resúmen}
 \section*{Resúmen}
-El desarrollo de productos en colaboración (CPD) está siendo ampliamente extendido en la industria, sobre todo en las áreas que involucran el diseño y fabricación asistida por ordenador CAD/CAM.
-La colaboración se convierte en un valor agregado en los proyectos si ésta aporta componentes efectivos para ser integrados en el producto final, compartiendo herramientas para la comprensión de la información generada y explotando el uso eficiente de la comunicación.
-El contenido compartido en entornos colaborativos por lo general implica modelos 3D y éstos se emplean como medios de comunicación entre las partes interesadas con el fin de visualizar ideas abstractas. También es necesario disponer de un repositorio común de datos que vaya más allá de la geometría, incluyendo especificaciones y documentos en diferentes formatos según las particularidades de cada proyecto, en contraposición a los procesos en los que se intercambian datos de un producto de manera jerárquica (“top-down”).
-Una etapa fundamental en el CPD es la revisión del diseño que se realiza para determinar si se satisface los requisitos, permite percibir e identificar los problemas y proponer acciones de rectificación. 
-En este escenario surge la necesidad de mecanismos de manipulación directa de los modelos 3D por parte de los interesados para posibilitar la generación de nuevas versiones o soluciones, y así gracias al diseño iterativo lograr la colaboración. Es indispensable que los modelos sean paramétricos y expongan sus características a través de parámetros fácilmente comprensibles por todas las partes involucradas.
-A partir de encuestas realizadas a profesionales en el ámbito de la fabricación digital se pudo identificar que:
-La mayoría de los modelos a pesar de ser generados mediante sistemas CAD avanzados, no se almacenan de forma adecuada, pudiendo resultar la posterior localización y recuperación muy costosas.
-No se percibe un proceso de documentación estándar o ampliamente utilizado.
-La gestión de los cambios en los diseños y los documentos asociados se realiza con frecuencia de forma manual.
-Las personas involucradas pueden estar dispersas geográficamente.
-Existe una heterogeneidad muy amplia de conocimientos en las personas involucradas respecto a la utilización de programas de aplicación CAD y de diseño 3D.
-Como punto extra se manifiesta la necesidad de obtener prototipos rápidos o representaciones limitadas del producto, fabricados con materiales de bajo costo para realizar pruebas tangibles y ser utilizados como fuentes de información para la retroalimentación del proceso iterativo de diseño. 
+En el pasado la fabricación de un producto consistía en delegar el diseño o entregar los planos a un especialista para que realice la manufactura, los contactos se producían de forma presencial y obligaban a realizar viajes para mantener el trabajo bajo control.
+El desarrollo de productos en colaboración es un concepto que está siendo cada vez más utilizado en la industria, especialmente en áreas que involucran el diseño y la fabricación asistida por computadora CAD/CAM. Los procesos de colaboración actual poseen características inherentes a la evolución de las telecomunicaciones y las tecnologías web, se asume que los proyectos contemplan la participación de personas dispersas geográficamente.\vskip
+Un equipo multidisciplinario se convierte en un valor agregado para los proyectos, incluso con personas sin conocimientos técnicos en programas avanzados de CAD  porque aportan componentes efectivos para ser integrados en los productos finales. Al mismo tiempo, las diferentes disciplinas producen de forma natural una gran diversidad de capacidades técnicas y por consecuencia, problemas de comunicación al intentar compartir información precisa y eficiente sobre los productos. 
+Estos problemas están directamente vinculados al contenido compartido que por lo general implica el uso de modelos 3D como nexo para visualizar, intercambiar ideas y revisar los diseños.\vskip
+El presente trabajo de tesis consta en el diseño e implementación un prototipo de software web de uso sencillo que permita resolver los problemas señalados, haciendo posible la colaboración entre usuarios con diferentes conocimientos técnicos mediante revisiones de modelos 3D y establecer una comunicación fluída que vaya más allá de la geometría.\vskip
+El prototipo llamado “XXXX” fué diseñado basándose en entrevistas usando el enfoque LEAN UX y desarrollado utilizando metodologías ágiles con tecnologías web FLOOS (Javascript, Node.js, OpenJSCAD, Vue.js, etc).
+Para validar el funcionamiento del software se plantearon dos escenarios de laboratorio con usuarios reales y se establecieron las conclusiones pertinentes.
+El software está documentado y disponible online para la descarga con una licencia open source en https://github.com/jositux/Tesis_Josi_Marcos\\
 
-Analizando lo expuesto en los párrafos anteriores se puede considerar a los entornos de colaboración como plataformas de intercambio de información vinculadas a modelos 3D paramétricos que permiten la participación de actores con posibilidad de estar dispersos geográficamente. También se evidencia la necesidad de herramientas intuitivas para la retroalimentación en la etapa específica de revisión del diseño y la posibilidad de obtener archivos preparados para la fabricación digital en cada iteración. 
+Palabras Claves: CAD, CPD, SPA, OpenJSCAD, Javascript, Vue.js, Node.js, LEAN UX, Agile
 
-Lo cual lleva a considerar algunos aspectos técnicos:
-La interoperabilidad a través de sistemas heterogéneos de software tiene que resolverse de manera que los recursos se pueden integrar.
-La comunicación debe contemplar las separaciones geográficas entre las personas involucradas. 
-Los archivos 3D obtenidos en cada iteración deben cumplir los requisitos necesarios para la fabricación digital.
-Y el más importante: la heterogeneidad de habilidades y conocimientos no debe ser una limitación para poder participar.
 
-Teniendo en cuenta estos aspectos se plantea como problema de investigación el diseño e implementación de un prototipo de software colaborativo para revisiones de modelos 3D paramétricos orientados a la fabricación digital que cuente con una arquitectura multiplataforma y basada en tecnologías web.
-Con el software propuesto los participantes no sólo podrán compartir los diseños 3D a través de una interfaz web, también podrán explorar y generar otras versiones o soluciones de los modelos son su respectiva información y opcionalmente obtener archivos preparados para la fabricación digital en formato STL.
+
 
 	
 % ADDITIONAL DECLARATIONS HERE (IF ANY)

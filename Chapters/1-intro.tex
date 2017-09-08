@@ -1,0 +1,53 @@
+%-----------------------------------------------------
+% Chapter 1: Introducción
+%-----------------------------------------------------
+\chapter{Introducción}
+\label{chap:cap1}
+
+This is the introduction to the thesis.\footnote{And this is a footnote.}  The conclusion is in Chapter \ref{chap:cap1} on page \pageref{chap:cap1}.
+
+\section{Conceptos}
+
+%Figure \ref{us_figure} shows the logo for the %University of Sussex.\footnote{This is a URL: %\url{http://www.sussex.ac.uk}} This is %consistent with Special Relativity %\citep{Einstein1905}. $E=mc^2$.
+
+%\begin{figure}
+%\centering
+%\includegraphics[width=5cm]{uslogo}
+%\caption[US Logo (optional short %caption)]{\label{us_figure} The logo for the %University of Sussex.}
+%\end{figure}
+
+La incorporación de automatizaciones en los procesos de fabricación se incrementa cada vez más gracias a la masificación de la fabricación digital. Las herramientas CAD/CAM se pueden utilizar en casi cualquier caso práctico y sus aplicaciones dejaron de ser una opción, para convertirse en la alternativa existente más utilizada. Estas herramientas permiten la participación de diseñadores industriales, arquitectos, diseñadores, ingenieros, artistas e incluso personas sin formación específica, generando nuevas técnicas de diseño y procedimientos de fabricación innovadores.
+Con  la llegada de los programas de aplicación CAD para modelado 3D paramétrico, en donde la geometría es controlada por parámetros que definen a los diseños en tamaño y forma se ha logrado una interacción y manipulación intuitiva sobre los modelos 3D. Estos parámetros pueden ser variables como ser alto, ancho, profundidad y también pueden ser utilizados como fórmulas; al manipular dichos parámetros el modelo cambia para reflejar la modificación.\
+Una de las ventajas del diseño paramétrico es que permite integrar la fabricación digital directamente al diseño, ya que se incorpora la producción digital a la manufactura por medio de máquinas de control numérico o impresoras 3D. De esta manera se optimiza el tiempo y los costos de producción al aplicar los conceptos básicos de la prefabricación.\
+Al mismo tiempo la especificación de los parámetros se traduce en un diseño de procesos y no de resultados concretos, por ende la manipulación de los parámetros permite visualizar no sólo una solución, sino una familia de posibles soluciones respetando ciertas pautas establecidas. Los parámetros pueden establecer mecanismos de comunicación entre los actores involucrados en el diseño y al mismo tiempo posibilitar que los modelos sean manipulados por más de una persona.
+El desarrollo de productos en colaboración se ha convertido en una parte esencial en los procesos de fabricación digital debido a la complejidad creciente de los productos y la personalización de los mismos a las particularidades de cada cliente.\
+El contexto actual de la colaboración posee características inherentes a la evolución de las telecomunicaciones y las tecnologías web, sumados a los cambios en los estilos de vida de la población mundial se asume que los proyectos contemplan cada vez más la participación de personas dispersas geográficamente.\
+Tradicionalmente se entregaban los planos a un especialista para que construyeran las distintas partes que integran el proyecto de cualquier sistema. Los contactos se producían de forma presencial y obligaban a frecuentes viajes para mantener el proyecto bajo control. Hoy, un especialista puede trabajar en estrecha relación con otras personas de forma colaborativa sin preocuparse por las separaciones geográficas.
+Para superar las barreras geográficas es posible utilizar HTML5 y WebGL. Estas tecnologías proveen capacidades 3D que se pueden utilizar directamente en un navegador web sin necesidad de complementos adicionales o extensiones. Otro de los beneficios es, que WebGL proporciona funcionalidad de aceleración por hardware, dando como resultado una mejora significativa del rendimiento.\
+
+Actualmente existen aplicaciones que implementan estas tecnologías como Thingiverse orientadas a artistas y aficionados que comparten sus diseños en repositorios en línea, sin embargo la mayoría de los archivos se comparten en un formato reducido STL que sólo representa una malla estática difícil de manipular. Para solventar esta limitación se proveen herramientas emergentes como Thingiverse Customizer que amplía la variedad de formas a partir de diseños paramétricos escritos en código OpenSCAD, pero rara vez el Customizer permite contribuir con contenido adicional a Thingverse debido a lo poco intuitivo que resulta especificar diseños mediante algoritmos para  la mayoría de los participantes.\
+Otros portales como GrabCAD proporcionan archivos CAD con una visualización muy detallada, pero la manipulación de estos modelos está fuertemente relacionada a la capacidad del usuario para utilizar herramientas CAD sofisticadas. \
+OpenJSCAD es una implementación en lenguaje javascript y WebGL inspirada en OpenSCAD, sigue el paradigma de la programación orientado a objetos, y posee prácticamente todas las funciones para generar modelos 3D paramétricos y compatibles con la fabricación digital. Tiene la característica de “Uso Dual” porque permite tanto la posibilidad de una interfaz a través de navegadores web como una CLI ( Interface por Línea de comandos ) a través de Node.js
+Node.js es un entorno Javascript multiplataforma, de código abierto para la capa del servidor (pero no limitándose a ello), está basado en eventos y por lo tanto es asíncrono. Utiliza el motor V8, desarrollado por Google y proporciona un entorno de ejecución del lado del servidor que compila y ejecuta javascript, el incremento de velocidad es importante debido a que V8 compila Javascript en código de máquina nativo, en lugar de interpretarlo o ejecutarlo como bytecode. \
+Para la fabricación digital el formato más utilizado es STL (siglas provenientes del inglés STereo Lithography) es un formato de archivo informático de diseño asistido por computadora (CAD) que define geometría de objetos 3D, excluyendo información como color, texturas o propiedades físicas que sí incluyen otros formatos CAD.\
+
+
+\section{Objetivos}
+\subsection {Objetivo General}
+Diseñar e implementar un prototipo de software colaborativo multiplataforma para revisiones de modelos 3D paramétricos orientados a la fabricación digital.
+
+\subsection {Objetivos Específicos}
+\begin{itemize}
+  \item Describir el estado actual de la tecnologías colaborativas para el diseño iterativo de modelos 3D.
+  \item Analizar y describir las tecnologías web disponibles para la visualización y manipulación directa de modelos 3D.
+  \item Diseñar una Interfaz Gráfica de Usuario (GUI) de un entorno colaborativo basándose en el diseño de experiencia de usuario UX.
+  \item Diseñar un modelo de dominio de una capa de servicios utilizando BDD (Desarrollo guiado por comportamiento) como metodología ágil.
+  \item Determinar los requerimientos de software necesarios para diseñar el entorno colaborativo que permita la revisión de modelos 3D y genere archivos preparados para la fabricación digital.
+  \item Desarrollar un prototipo de software con herramientas FLOSS según los requerimientos de la GUI y el Modelo de dominio.
+  \item Probar el prototipo con usuarios finales en dos escenarios diferentes y evaluar los resultados.
+\end{itemize}
+
+
+
+
+

@@ -106,7 +106,7 @@
 \LARGE\textit{Tesis de Grado Ingeniería en Informática}
 \vskip5mm
 % AUTHOR
-\Large\textbf{José María Guaimas, Marcos Henning}
+\Large\textbf{José María Guaimas, Marcos Daniel Henning}
 \vskip5mm
 % Director
 \Large\textbf{Director: Ing. Juan B. Cabral}\\
@@ -150,7 +150,7 @@ Universidad Gastón Dachary 2017\\
 \underline{Universidad Gastón Dachary}
 \vskip20mm
 % AUTHOR, QUALIFICATION
-\textsc{José María Guaimas, Marcos Henning}\\
+\textsc{José María Guaimas, Marcos Daniel Henning}\\
 \textsc{Ingeniería en Informática}
 \vskip20mm
 % TITLE
@@ -159,7 +159,7 @@ Universidad Gastón Dachary 2017\\
 % SUBTITLE (optional)
 \underline{\textsc{Subtítulo}}
 \vskip20mm
-\underline{\textsc{Sumario}}
+%\underline{\textsc{Sumario}}%
 \vskip2mm
 \end{center}
 % Change line spacing
@@ -212,21 +212,33 @@ Universidad Gastón Dachary 2017\\
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % CAPITULOS
 % Mantenemos los capítulos separados.
-% Dentro de la carpeta Appendices agregamos un archivo nuev el número correspondiente X.tex"
+% Dentro de la carpeta archivo nuevo el nombre correspondiente X.tex"
 % Agregamos de la siguiente manera y para no mostrar usamos el porcentual %:
 
-\input{Chapters/1}
-\input{Chapters/2}
-%\input{Chapters/2}
+\input{Chapters/1-intro}
+\input{Chapters/2-marco-teorico}
+\input{Chapters/3-desarrollo}
+\input{Chapters/4-pruebas}
+\input{Chapters/5-conclusiones}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% BIBLIOGRAFIA
-\clearpage
-\phantomsection
-\addcontentsline{toc}{chapter}{Bibliografía}
-\bibliography{bib}
+% Referencias
+\input{Referencias/referencias}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% START ANEXOS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\input{Anexos/encuestas}	% Appendix Title
+
+%\input{Appendices/AppendixB} % Appendix Title
+
+%\input{Appendices/AppendixC} % Appendix Title
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 

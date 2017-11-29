@@ -1,7 +1,7 @@
-\documentclass[a4paper,11pt]{report}
+\documentclass[a4paper,12pt]{report}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Universidad
+% Universidad Gastón Dachary
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Modification History
 %
@@ -24,9 +24,9 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % BIBLIOGRAPHY STYLE
-\usepackage{natbib}
-% \bibliographystyle{plain} for [1], [2] etc.
-\bibliographystyle{apalike}
+\bibliographystyle{unsrt}
+%\bibliographystyle{plain} for [1], [2] etc.
+%\bibliographystyle{apalike}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
@@ -37,6 +37,9 @@
 \usepackage{epstopdf}
 \usepackage[utf8]{inputenc}
 \usepackage[spanish]{babel}
+\usepackage{dirtytalk} % Permite el uso de say
+\usepackage{csquotes}  % Permite el uso de \begin{displayquote} 
+
 % The left-hand-side should be 40mm.  The top and bottom margins should be
 % 25mm deep.  The right hand margin should be 20mm.
 \usepackage[a4paper,top=2.5cm,bottom=2.5cm,left=4cm,right=2cm,headsep=10pt]{geometry}
@@ -74,6 +77,15 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
+\usepackage[
+backend=biber,
+style=numeric,
+sorting=none
+]{biblatex}
+\addbibresource{Referencias/bib.bib}
+
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % BEGIN DOCUMENT
 \begin{document}
@@ -100,10 +112,10 @@
 \vskip40mm
 \begin{center}
 % TITLE
-\huge\textbf{Título a definir}
+\huge\textbf{COCADA}
 \vskip2mm
 % SUBTITLE (optional)
-\LARGE\textit{Tesis de Grado Ingeniería en Informática}
+\large\textit{Aplicación web para revisiones de modelos 3D paramétricos con un enfoque LEAN UX y Agile}
 \vskip5mm
 % AUTHOR
 \Large\textbf{José María Guaimas, Marcos Daniel Henning}
@@ -118,7 +130,7 @@
 \large
 % QUALIFICATION
 Departamento de Informática \\
-Universidad Gastón Dachary 2017\\
+Universidad Gastón Dachary 2018\\
 % DATE OF SUBMISSION
 
 \end{flushright}		

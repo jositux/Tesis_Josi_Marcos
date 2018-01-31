@@ -38,7 +38,9 @@
 \usepackage[utf8]{inputenc}
 \usepackage[spanish]{babel}
 \usepackage{dirtytalk} % Permite el uso de say
-\usepackage{csquotes}  % Permite el uso de \begin{displayquote} 
+\usepackage{csquotes}  % Permite el uso de \begin{displayquote}
+\usepackage{amsmath}
+\addtolength{\footnotesep}{4mm}
 
 % The left-hand-side should be 40mm.  The top and bottom margins should be
 % 25mm deep.  The right hand margin should be 20mm.
@@ -86,6 +88,10 @@ sorting=none
 
 
 
+\renewcommand{\theequation}{Ec.\arabic{equation}} % Agrega "Ec." en la numeración de las ecuaciones.
+
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % BEGIN DOCUMENT
 \begin{document}
@@ -112,10 +118,10 @@ sorting=none
 \vskip40mm
 \begin{center}
 % TITLE
-\huge\textbf{COCADA}
+\huge\textbf{Collaborative CAD Application (COCADA)}
 \vskip2mm
 % SUBTITLE (optional)
-\large\textit{Aplicación web para revisiones de modelos 3D paramétricos con un enfoque LEAN UX y Agile}
+\large\textit{Aplicación web para revisiones de modelos sólidos paramétricos con un enfoque Lean UX y Agile}
 \vskip5mm
 % AUTHOR
 \Large\textbf{José María Guaimas, Marcos Daniel Henning}

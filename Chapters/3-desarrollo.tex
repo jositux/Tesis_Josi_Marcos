@@ -4,27 +4,6 @@
 \chapter{Desarrollo}
 \label{chap: cap3}
 
-
-IMPORTANTE PARA JUSTIFICAR
-
-https://www.uxpin.com/studio/blog/forget-tedious-documentation-prototype-requirements-instead/
-http://www.agilemodeling.com/essays/agileDocumentationBestPractices.htm
-
-http://jmbeas.es/guias/manual-del-buen-dueno-de-producto-product-owner/
-
-Chaos report
-http://www.laboratorioti.com/2016/05/16/informe-del-caos-2015-chaos-report-2015-bien-mal-fueron-los-proyectos-ano-2015/
-
-http://repository.unimilitar.edu.co/bitstream/10654/13523/1/Articulo_final_NELSON_RIVERA.pdf
-
-https://www.forbes.com/sites/bernardmarr/2016/09/13/are-these-the-real-reasons-why-tech-projects-fail/#6646af027320
-
-https://www.youtube.com/watch?v=xh7P1WNV0ME
-
-PAPER colaborative
-http://www.inf.ufrgs.br/~oliveira/pubs_files/Fan_Oliveira_M_K_sketch.pdf
-
-
 \section{Descripción general del prototipo}
 El prototipo de entorno colaborativo cuenta con una arquitectura que permite desplegar un aplicación multiplataforma accesible a través de un navegador web.
 
@@ -50,133 +29,326 @@ El segundo componente es una interfaz construida con tecnologías web (Front-End
  
 \end{itemize}
 
-\section{Enfoque Lean UX}
-
-Lean UX \cite{Gothelf2013} es el enfoque o metodología que acompaña la construcción del prototipo de este trabajo final, a continuación se explican los conceptos que motivan la elección de esta metodología.
 
 
-\begin{figure}
-\centering
-\includegraphics[width=9cm]{Img/UX/UX-0.png}
-\caption[(optional short caption)]{\label{us_figure} Enfique LEAN UX}
-\end{figure}
+\subsection{Investigación}
 
-Desde 1980 hasta fines de 1990 los diseñadores se enfocaron en el diseño de software de la misma manera que lo habían hecho con el resto de materiales. Cuando se diseña para producir algo físico, se necesita tener muy claro lo que se hace antes de iniciar la producción física, porque la producción es costosa. Es costoso poner en marcha una fábrica para producir bienes físicos. En el trabajo con software, los diseñadores tuvieron que enfrentar nuevos retos, descubrir los nuevos medios y, a medida que lo hacían, aparecían nuevas especialidades, como el diseño de interacción o la arquitectura de información. Sin embargo, en esa época la práctica de los diseñadores apenas cambió. Todavía diseñaban los productos de manera tradicional, con mucho detalle y por adelantado, porque había un proceso de "fabricación": había que hacer copias de los trabajo en discos flexibles y CDs y distribuirlas de la misma manera en la que se distribuyen los bienes físicos. Todavía era muy costoso cometer errores.\vskip En la actualidad internet ha cambiado la distribución de software de una manera radical. La mayoría del software se distribuye en línea y al desaparecer el proceso físico de fabricación se puede trabajar con ciclos de producción mucho más cortos.
-Los equipos de desarrollo de software utilizan técnicas como el desarrollo ágil, la integración continua y el despliegue continuo reduciendo drásticamente el tiempo para generar nuevas cambios en el software. Estos equipos suben código a producción en el tiempo que tardaríamos en guardar cualquier archivo en una computadora. Además, utilizan esos ciclos cortos como ventaja competitiva, producen nuevas versiones del software tiempos acotados, lo que les permite obtener retroalimentación del mercado e iterar incorporando lo que han aprendido y tal vez sin advertirlo aumentan las expectativas de los clientes que pueden obtener más calidad en menos tiempo. La verdad es que, en este nuevo contexto, las prácticas de pensar todo al inicio de los procesos ya no funcionan. \vskip
-\textit{Lean User Experience} (Lean UX) se puede traducir como \textit{Experiencia de Usuario limpia o sin desperdicios} y se describe como una nueva etapa evolutiva en el diseño de productos. El objetivo es tomar las mejores herramientas del diseño y adaptarlas a esta nueva realidad.
-Lean UX\cite{Nyamsuren2015} es profundamente colaborativo, porque los diseñadores no están aislados del resto del equipo de trabajo ya que permite implementar técnicas para construir una comprensión compartida, se puede tener retroalimentación con los usuarios finales y  replantear las conversaciones de diseño en términos objetivos, obtener métricas sobre las funcionalidades, analizar y ajustar.
-Otra ventaja importante es cambiar la forma en que se comunica el diseño del producto, en lugar de comunicar características y documentos exhaustivos se puede comunicar funcionalidad.
+Los proyectos de diseño de experiencia de usuario (UX) han estado enmarcados, tradicionalmente, por los requerimientos y las entregas. A los equipos se les suministraban requerimientos para que produjeran entregas. Lean UX cambia por completo este marco de trabajo. El objetivo no es generar un documento entregable, sino producir un resultado. \textbf{No se comienza con requerimientos, sino con suposiciones}. A partir de ellas, se crean y prueban hipótesis. 
+
+Una declaración de hipótesis es una manera de expresar las suposiciones del proyecto de una forma comprobable. Pero primero es necesario declarar el problema de la investigación.
+
+\subsubsection{Declaración del problema}
 
 
-3 pilares principales de Lean UX:\vskip
-\textbf{1. Design Thinking o Pensamiento de Diseño:} Alienta al equipo a colaborar en todas las etapas del proyecto y a considerar el producto desde una perspectiva global, utilizando la sensibilidad y los métodos de los diseñadores para satisfacer las necesidades del usuario final con soluciones tecnológicamente viables.
 
-\textbf{2. Desarrollo Ágil}:
- Aplica los cuatro principios básicos del desarrollo Ágil al diseño de los productos.
-
-\begin{itemize}
-\item
-\textbf{Los individuos y las interacciones son más importantes que los procesos y las herramientas}\vskip
-Para generar rápidamente las mejores soluciones, es necesario implicar al todo el equipo. El intercambio de ideas deberá ser libre y frecuente. La conversación fluida entre colegas deberá primar por encima de las restricciones propias de las herramientas, ya sea en los procesos o en la producción.
-\item
-\textbf{El software funcional es más importante que la documentación exhaustiva}\vskip
-Se pueden encontrar múltiples soluciones para todos los problemas de negocio y todos los miembros del equipo podrán tener una opinión diferente de cuál es la mejor. El reto está en averiguar cuál de ellas es la que tiene más posibilidades. Por eso, cuanto antes se cuente con un software que funcione, antes se puede encontrar la solución que mejor se adapte a los requerimientos.
-\item
-\textbf{La colaboración con los clientes es más importante que la negociación de contratos con ellos}\vskip
-Si el equipo colabora con los usuarios/clientes, hay un entendimiento común sobre los problemas y las posibles soluciones. Cualquier decisión que se adopte después se tomará por consenso, lo que se traduce en iteraciones más rápidas y una verdadera implicación de todos los actores con la ventaja de trabajar siempre con soluciones validadas. Además, como todos los miembros del equipo participan en la toma de decisiones, no se requieren tantas entregas de documentación por escrito.
-\item
-\textbf{La respuesta a los cambios es más importante que la planificación}\vskip
-Lean UX asume que los diseñadores del producto inicial no encontrarán la solución a la primera, por lo que el objetivo consiste en averiguar qué han hecho mal lo antes posible. Una vez que se descubra lo que funciona y lo que no, se pueden ajustar las propuestas y volver a probarlas. Así, la retroalimentación mantendrá ágil al equipo, dirigiendo la solución siempre en la dirección correcta.
-\end{itemize}
-
-\textbf{3. Método Lean Startup}: Utiliza un bucle de retroalimentación llamado  "\ Construir-Medir-Aprender" para minimizar el riesgo del proyecto, haciendo que los equipos construyan y aprendan rápidamente.
-Los equipos construyen productos viables mínimos del inglés \textit{Minimum Viable Product} (MVP) y los envían para comenzar el proceso de aprendizaje tan pronto como sea posible.\vskip
-Lean Startup\footnote{\ https://es.wikipedia.org/wiki/Lean_startup}  desde el principio aboga por la creación de prototipos rápidos para comprobar, por un lado, que las suposiciones son correctas y, por otro, para conseguir retroalimentación de los clientes de forma inmediata y así poder mejorar el software más rápido que las prácticas tradicionales de ingeniería de software.\vskip
-Lean UX, por su parte, es una implementación directa de esta filosofía aplicada al diseño de productos. Cada diseño es una solución propuesta, una hipótesis. Su objetivo consiste en validar la solución de la manera más eficiente posible mediante la realimentación. La cosa más pequeña que se puede construir para probar cada hipótesis es el Producto Viable Mínimo  MVP. 
-Lean UX funciona como una práctica para entender rápidamente la función de un producto. Para ello elije un camino colaborativo y multidisciplinario; reduce el énfasis por la documentación exhaustiva y aumenta el enfoque en la construcción de un entendimiento compartido del producto que está siendo diseñado.
-
-Por todo lo señalado se considera que este enfoque es el adecuado para abordar el trabajo en la aplicación COCADA, como consecuencia se obtiene: un equipo que trabaja de forma colaborativa, iterativamente y en paralelo, que reduce al mínimo los documentos entregables y que se centra en el software funcional y en la retroalimentación con el usuario final.
-
-
-\section{Visión, marco y resultados}
-
-Los proyectos de diseño de experiencia de usuario (UX) han estado enmarcados, tradicionalmente, por los requerimientos y las entregas. A los equipos se les suministraban requerimientos para que produjeran entregas. Lean UX cambia por completo este marco de trabajo. El objetivo no es generar un documento entregable, sino producir un resultado. \textbf{No se comienza con requerimientos, sino con suposiciones}. A partir de ellas, se crean y prueban hipótesis. Entonces se puede medir si gracias a las hipótesis se ha conseguido alcanzar los resultados buscados. La herramienta principal de este nuevo enfoque del trabajo son \textbf{las declaraciones de hipótesis}. Estas declaraciones son el punto de inicio de los proyectos. Establecen una visión clara del trabajo y consiguen algo importante: que los miembros del equipo de desarrollo y los gestores del proyecto dejen de hablar sobre la salida que se espera, por ejemplo, \textit{"Vamos a crear una función para visualizar modelos 3d paramétricos"} y comiencen a hacerlo sobre los resultados del proyecto, por ejemplo, \textit{"Queremos aumentar el número de comparticiones de diseños entre los actores"}.\vskip
-Para obtener las suposiciones se tiene que hacer una investigación previa
-
-Una declaración de hipótesis es una manera de expresar las suposiciones que tenemos de nuestro proyecto de una forma comprobable. Está compuesta de los siguientes elementos:
-
-\subsection{Declaración de suposiciones}
-
+\subsubsection{Declaración de suposiciones}
 Las suposiciones son una declaración de alto nivel que pensamos que es cierta.
 
-Todos los proyectos, no solo los de esta metodología, comienzan de este modo pero, normalmente, no hacen explícitas sus suposiciones. En lugar de ello, se ignoran o, en el peor de los casos, se tratan como si fueran hechos probados.
+Todos los proyectos comienzan de este modo pero, normalmente, no hacen explícitas sus suposiciones. En lugar de ello, se ignoran o, en el peor de los casos, se tratan como si fueran hechos probados.
 
-\textbf{Quiénes}: La declaración de suposiciones es un ejercicio de grupo. Se reúne al todo el equipo, asegurándose de que todas las disciplinas estén representadas, se incluye en él a todos los que puedan saber cosas importantes para el proyecto. Por ejemplo, si el proyecto trata de solucionar una queja habitual por parte de los clientes, podría ser beneficioso que se incluyera a algún representante del servicio al cliente en el servicio de call center. Los encargados de ese servicio hablan más con los clientes que nadie de la empresa, por lo que seguramente sabrán más sobre este tema que el resto del equipo.
+\begin{itemize}
+ 
+
+\item \textbf{Quiénes}:
+\begin{enumerate}
+\item \textbf{Profesionales encargados de crear diseños de productos}. Posee las capacidades técnicas y la experiencia sobre procesos y metodologías para llevar a cabo un proyecto de diseño en conjunto con el cliente/usuario.
+\item \textbf{Personas sin conocimientos específicos}. Interesados en fabricar productos o testear su funcionamiento, pueden ser emprendedores, artistas.
+\end{enumerate}
+
+\end{itemize}
 
 
-\textbf{Preparación}: Es necesario que, antes de empezar, el equipo sepa el problema con el que se trabajará para que puedan preparar el material que necesiten. En la preparación se debe recurrir a técnicas de investigación para recolectar información sobre los usuarios y sus necesidades, en la Fig. 3.2 se puede observar un diagrama de decisión de las técnicas utilizadas para este trabajo.
+\textbf{Preparación}: En la preparación se debe recurrir a técnicas de investigación para recolectar información sobre los usuarios y sus necesidades, en la Figura \ref{fig:diagrama-desicion} se puede observar un diagrama de decisión de las técnicas utilizadas para este trabajo.
 
-\begin{figure}
-\centering
+
+\begin{figure}[h]
 \includegraphics[width=16cm]{Img/CPD/3-FLOW.png}
-\caption[Diagrama de desición de investigación del usuario]{\label{us_figure} Diagrama de desición de investigación del usuario}
+\centering
+\caption{\textbf{ \footnotesize{Diagrama de desición de investigación del usuario}}}
+\label{fig:diagrama-desicion}
 \end{figure}
 
 
+\subsubsection{Priorización de las suposiciones} 
+La razón por la que se declaran suposiciones al inicio del trabajo es poder identificar los riesgos del proyecto. Una vez que dispongamos de una lista de suposiciones se necesita averiguar cuáles de ellas tienen más riesgo. Lean UX lleva a cabo un ejercicio implacable de priorización. Una vez que se comprende que no se pueden probar todas las suposiciones del proyecto, la cuestión que se presenta es: ¿cuál de ellas se debe de probar primero? Para decidir sobre esta cuestión,  se puede crear un gráfico como el que aparece en la figura 2.82 y situar en él la lista de suposiciones. El objetivo del gráfico es decidir qué suposiciones se debe probar primero, en base en primer lugar, en su nivel de riesgo (por ejemplo, si se hiciera esto mal, ¿hasta qué punto se vería perjudicado el proyecto?) y, en segundo lugar, en el conocimiento que se tenga de la suposición. Cuánto más alto sea el riesgo que implica una suposición y menos se sepa de ella, mayor debe ser la prioridad. La asignación de la prioridad para la prueba no significa, ni mucho menos, que aquellas que no sean prioritarias desaparezcan del proyecto para siempre. Es recomendable mantener una lista de cuestiones pendientes con las suposiciones que no se hayan priorizado para poder volver a ellas y probarlas si se demuestra que amerita hacerlo.
 
 
-\subsection{Hipótesis}
-Descripción general de lo que se debe hacer
+\begin{figure}[h]
+\includegraphics[width=8cm]{Img/UX/lean-supo.jpg}
+\centering
+\caption{\textbf{ \footnotesize{ Matriz de priorización }}}
+\end{figure}
+
+
+\subsubsection{Hipótesis}
+Una vez se tenga la lista de suposiciones priorizada, se podrá dar el siguiente paso: probarlas. Para hacerlo, no obstante, será necesario transformar cada declaración de suposición a un formato más fácil de probar: Una descripción general de lo que se debe hacer y que impacto se espera. 
+
+\textbf{Subhipótesis: división de las hipótesis en partes más pequeñas }\vskip
+La hipótesis planteada es demasiado extensa la mayoría de las veces para que, con una única prueba, pueda determinarse su validez. Esto se produce porque la hipótesis contiene demasiadas partes móviles, es decir, demasiadas subhipótesis. Cuando esto sucede, se recomienda dividir las hipótesis en partes más pequeñas y específicas. Existen muchas maneras de hacerlo, pero para el trabajo de desarrollo de productos en particular creo que lo mejor es el siguiente formato: \vskip
+\textit{Creemos que [haciendo esto - desarrollando esta función - creando esta experiencia de usuario] para [estas - personas - personajes] conseguiremos [este resultado].} 
+Se sabrá si esto es correcto cuando se obtenga \textit{[este feedback del mercado, esta medida cuantitativa, o este conocimiento cualitativo]}\vskip El primer campo se completará con la función o mejora que está considerando para el producto. El segundo describirá exactamente qué clientes objetivo se beneficiarán de la función. El último campo, por su parte, especifica los beneficios que esos clientes obtendrán de ella. La frase final lo une todo. Esta frase determina si la hipótesis es cierta o no. ¿Qué resultado del feedback del mercado será el que indique que la idea es correcta? Podría ser una medida cuantitativa, como el uso que hacen los usuarios de una determinada función del producto, por ejemplo, o como el incremento de una métrica de negocio, o bien una medida cualitativa de alguna clase.
+
+
+
 
 Desarrollar un software de comunicación eficiente en la revisión de diseños para un equipo multidisciplinario
 logrará una mayor tasa de participación y un aumento en la satisfacción de los involucrados.
 Se verificará que esto es cierto cuando aumenten las opiniones de los involucrados y se pueda registrar la evolución del diseño.
 
 
-\subsection{Proto-personas}
+\subsubsection{Proto-personas}
 
-Se usan Modelos de personas como arquetipos de usuarios que a su vez comparten  características de determinados grupos de clientes o usuarios.
-En Lean UX, se invierte el orden de operaciones en el proceso persona, se comienza con suposiciones y luego se hace una investigación para validar las suposiciones. En lugar de pasar meses en el campo entrevistando a la gente, se invierten horas creando proto-personas o simplificaciones de personas para generar la conjetura más aproximada de quién está utilizando (o va a utilizar) el software y por qué. 
+Se usan Modelos de personas como arquetipos de usuarios que a su vez comparten características de determinados grupos de clientes o usuarios.
+Son simplificaciones de personas para generar la conjetura más aproximada de quién utiliza el software y por qué. 
 
-Ver fig 3.2 y 3.3
-
-\begin{figure}
+\begin{figure}[h]
+\includegraphics[width=10cm]{Img/UX/UX-proto.jpg}
 \centering
-\includegraphics[width=9cm]{Img/UX/proto-table.jpg}
-\caption[Proto-persona (optional short caption)]{\label{us_figure} Tabla de proto-persona}
+\caption{\textbf{ \footnotesize{Proto-persona del profesional}}}
 \end{figure}
 
-\begin{figure}
+
+\subsubsection{Funciones}
+ Son las características, productos y los servicios que se pueden proponer para alcanzar esos resultados que necesita el usuario. El proceso de diseño luego comienza cuando se tiene noción de alguna característica y se trabaja para justificar la característica. En Lean UX, las características existen exclusivamente para satisfacer las necesidades del usuario.
+
+\subsubsection{Sub-hipótesis con funciones: Historias}
+
+
+
+\begin{tabular}{ |p{4.2cm}|p{4.2cm}|p{4.2cm}| }
+ \hline
+  \hline
+ Se desarrolla & Para  & Para\\
+ \hline
+Un visualizador de modelos 3D & Para la persona con rol diseñador experto (XXX) & que solucione la visualización online de los avances de su trabajo \\
+ \hline
+\end{tabular}
+
+
+
+\subsection{Diseño del prototipo}
+Lean UX es un proceso colaborativo, un proceso que reúne a diseñadores y no diseñadores en un trabajo de creación conjunta. El diseño colaborativo es un enfoque que permite a los integrantes del equipo crear juntos los conceptos del producto. También les ayuda a construir un entendimiento común sobre el problema y sobre las soluciones de diseño. Asimismo, les permite decidir qué funcionalidad y elementos de la interfaz implementan mejor las funciones recogidas en sus hipótesis. La documentación de salida de estas sesiones consta normalmente de esquemas de baja fidelidad y \textit{wireframes}. Es básico que la documentación no esté muy elaborada para que el trabajo continúe siendo maleable. De esta manera, el equipo puede cambiar de dirección con facilidad una vez que sus pruebas les demuestren que el enfoque adoptado no funciona.
+
+\subsubsection{Estudio de diseño}
+El equipo re reune en una sesión más formal de trabajo o \textbf{Estudio de Diseño} (a veces también llamado Charrette de diseño)\citep{Gothelf2013} es una manera de conseguir que un equipo multidisciplinario visualice de forma conjunta las soluciones potenciales a un problema de diseño.\vskip
+Se usan técnicas específicas para llevar a cabo las sesiones de Estudio de Diseño y pueden organizarse de una forma más o menos formal, dependiendo de la situación del proyecto y los plazos de entrega. Abarca los siguientes pasos:
+ \begin{itemize}
+     \item Definición del problema y sus restricciones. 
+     \item Generación de ideas individuales (divergir). 
+     \item Presentación y críticas. 
+     \item Iteración y perfeccionamiento (emerger). 
+     \item Generación de ideas del equipo (converger).
+\end{itemize}
+y se realizan comúnmente utilizando Lápices, Bolígrafos, Marcadores (de varios colores). Plantillas para esquemas, Pegatinas.
+
+El objetivo del estudio del diseño es preparar todo para el siguiente paso de Lean UX: crear un PMV y probarlo con un experimento.
+
+\begin{figure}[h]
+\includegraphics[width=10cm]{Img/UX/ed2.jpg}
 \centering
-\includegraphics[width=9cm]{Img/UX/UX-proto.jpg}
-\caption[Proto-persona (optional short caption)]{\label{us_figure} Proto-persona}
+\caption{\textbf{ \footnotesize{Posibles escenarios diseñados en el estudio de diseño}}}
 \end{figure}
 
-\subsection{Características}
- Una vez que se obtiene una lista de los resultados buscados por los usuarios y se han establecido los diferentes grupos, es hora de empezar a pensar en qué tácticas, características, productos y los servicios que se pueden proponer para alcanzar esos resultados deseados. El proceso de diseño comienza cuando se tiene noción de alguna característica y se trabaja para justificar la característica. En Lean UX, las características existen exclusivamente para satisfacer las necesidades del usuario.
+\begin{figure}[h]
+\includegraphics[width=12cm]{Img/UX/ed.jpg}
+\centering
+\caption{\textbf{ \footnotesize{Interfaz como salida del estudio de diseño}}}
+\end{figure}
 
-\subsection{Sub-hipótesis con funcionalidades: Historias}
+\clearpage
+\subsubsection{Componentes y Guías de estilo}
+Una herramienta que facilita el diseño colaborativo es la guía de estilo, que es una biblioteca de patrones, ampliamente aceptada por todos, que codifica los elementos de texto, los gráficos y los interactivos de una interfaz de usuario y de un sistema. Estas guías (también conocidas como bibliotecas de patrones) son recopilaciones dinámicas de todos los componentes del producto a los que se enfrentará el cliente. Los encabezados, las tablas, los formularios, las etiquetas, la lógica de los botones y cualquier otra cosa que forme parte de la experiencia del usuario con nuestro producto deberán aparecer en dicha guía de estilo. Algunas empresas utilizan \textit{wikis} para las guías de estilo, lo que permite que toda la colección permanezca actualizada y que esté disponible para el equipo. Otros equipos, en cambio, prefieren crear guías de estilo ``dinámicas", es decir, repositorios de diseño y de código front-end\footnote{Front-end es la parte del software que interactúa con los usuarios.} que no solo definen el aspecto y el comportamiento del producto, sino que también proporcionan el lenguaje necesario y las hojas de estilo para la interfaz de cliente. De esta manera, al modificar la guía de estilo también se modifica el producto.
+Para la estética del prototipo se eligió el concepto de diseño \textit{Material Design}\footnote{\url{https://material.io/guidelines/}}, un diseño donde la profundidad, las superficies, los bordes, las sombras y los colores juegan un papel principal. A continuación se especifican los componentes gráficos a utilizar:
 
-Tabla:
 
-Se necesita hacer / Para qué persona / Qué soluciona.
+\textbf{1. Tamaños de letras según dispositivos}
+    \begin{figure}[h]
+    \includegraphics[width=14cm]{Img/UX/guia1.jpg}
+    \centering
+    \caption{\textbf{ \footnotesize{Tamaño de letras con sus respectivas clases CSS}}}
+\end{figure} 
+    
+\textbf{2. Esquema de colores}
+\begin{figure}[h]
+    \includegraphics[width=12cm]{Img/UX/guia0.jpg}
+    \centering
+    \caption{\textbf{ \footnotesize{Esquema de colores con sus respectivas clases de CSS}}}
+\end{figure}
 
-Se necesita desarrollar un visualizador de modelos 3D / Para la persona con rol diseñador experto (XXX) / que solucione la visualización online de los avances de su trabajo.
 
+\textbf{3. Iconos mediante fuentes tipográficas}
+    Usando el prefijo fa- seguido del nombre del ícono como clase CSS. Las fuentes tipográficas son vectoriales, por lo que se puede cambiar el tamaño y color de los iconos sin perder calidad.
+    \begin{figure}[h]
+    \includegraphics[width=11cm]{Img/UX/guia3.jpg}
+    \centering
+    \caption{\textbf{ \footnotesize{Iconos mediante fuentes tipográficas. Clase de CSS ej: .fa-email}}}
+   
+    \end{figure}
+    
+ 
+\textbf{4. Botones de acción simples}
+    \begin{figure}[h]
+    \includegraphics[width=11cm]{Img/UX/guia2.jpg}
+    \centering
+    \caption{\textbf{ \footnotesize{Estilos de botones. Clase de CSS ej: .btn.primary}}}
+    \end{figure}
+    
+\clearpage
+\textbf{5. Botones de acción flotante}\vskip
+El Botón de Acción Flotante (FAB) es un botón circular con un ícono flotando en una página. El propósito de un FAB es parecido a un botón llamado-a-la-acción en ingles \textit{call-to-action}\footnote{\url{https://en.wikipedia.org/wiki/Call_to_action_(marketing)}}; enfatiza una acción que la mayoría de los usuarios presumiblemente realizaría. Generalmente se presenta con un color vívido que lo hace más prominente entre el resto de los elementos de la aplicación.
+    \begin{figure}[h]
+    \includegraphics[width=12cm]{Img/UX/guia4.jpg}
+    \centering
+    \caption{\textbf{ \footnotesize{Botones de acción flotantes. Clase de CSS ej: .btn-floating.blue}}}
+    \end{figure}
+    
+
+   \textbf{6. Controles de entrada}\vskip
+   Estos elementos sirven para ser usados de múltiples formas. En el prototipo se utilizan sobre todo para la manipulación de parámetros de los modelos 3D y  también para la mayoría de los formularios.
+    \begin{figure}[h]
+    \includegraphics[width=14cm]{Img/UX/guia6.jpg}
+    \centering
+    \caption{\textbf{ \footnotesize{Controles gráficos, por ejemplo para parámetros.}}}
+    \end{figure}
+
+
+
+\clearpage  
+ \textbf{7. Cards o Tarjetas}\vskip
+ Las Tarjetas se están convirtiendo rápidamente en un patrón de UI indispensable, particularmente para las webs móviles. Esto se debe en parte a las webs como Pinterest\footnote{\url{https://pinterest.com}} y Twitter que hacen uso exhaustivo de las mismas. En este contexto se utilizan las tarjetas para mostrar listados o grillas de modelos que son parte de un proyecto de diseño.
+    \begin{figure}[h]
+    \includegraphics[width=7cm]{Img/UX/guia5.jpg}
+    \centering
+    \caption{\textbf{ \footnotesize{Tarjeta de un modelo 3D}}}
+    \end{figure}
+    
+    \textbf{8. Comentarios}\vskip
+    En el prototipo, los comentarios se pueden considerar tarjetas con un formato específico. Sirven para definir listados de comentarios o hilos de conversaciones, que hacen posible la comunicación entre los participantes de un proceso de diseño. Se pueden apreciar en la Figura \ref{fig:comment} el uso de hashtag (\#) y menciones (@), como en la mayoría de las redes sociales actuales.
+    \begin{figure}[h]
+    \includegraphics[width=7cm]{Img/UX/guia7.jpg}
+    \centering
+    \caption{\textbf{ \footnotesize{Tarjeta de comentario sobre un modelo.}}}
+     \label{fig:comment}
+    \end{figure}
+    
+    
+
+
+
+\clearpage
+\subsection{PMV y experimentos}
+Con las diferentes partes de las hipótesis definidas, se pueden determinar qué ideas sobre el producto son válidas y cuáles deben descartarse. El Producto Mínimo Viable (PMV) en inglés \textit{Minimum Viable Product} es importante porque probadas cuanto antes se encuentren las funciones en las que merece la pena invertir, antes se pueden centrar los recursos en las mejores soluciones. Este es uno de los modos principales que tiene Lean UX de minimizar el despilfarro. Se parte de la lista de hipótesis priorizada. Para determinar la validez de nuestras declaraciones de hipótesis se crean los mínimos elementos posibles. Esos elementos se llaman llamaremos \textbf{PMV}. Se utilizan  esos PMV para hacer experimentos. El resultado de esos experimentos indicará si la hipótesis fué correcta y si la dirección en la que se estaba trabajando es la indicada, debe perfeccionarse o debe abandonarse.
+
+\subsubsection{Creacion de un PMV}
+Al comenzar la planificación de un PMV, lo primero que hay que tener en cuenta es lo que se quiere aprender con él. Por ello, resulta útil pensar estas tres cuestiones básicas: 
+\begin{itemize}
+    \item ¿Existe una necesidad para la solución se diseña? 
+    \item ¿Existe valor en la solución y las funciones que se ofrecen?
+    \item  ¿La solución es usable?
+\end{itemize}
+
+Independientemente del propósito del PMV, esta etapa permite lanzar un producto al mercado y observar cómo interaccionan los usuarios con él en contextos realistas. Si con el PMV lo que se pretende es maximizar el aprendizaje, se debe:
+\begin{itemize}
+    \item Ser claro y conciso: dedicar el tiempo a depurar la idea hasta llegar a su proposición central de valor y presentar esa proposición a los clientes. 
+    \item Priorizar sin compasión: las ideas, como los artefactos, son pasajeras. Dejar que las mejores prueben su valor demostrando que aguantan el proceso de priorización. 
+    \item Ser ágil: la información llega rápidamente, por lo que hay que asegurarse de que en tu medio de trabajo puedes realizar actualizaciones con facilidad. 
+    \item Medir el comportamiento: construir un PMV que permitan observar y medir lo que la gente hace realmente, no lo que dicen que hacen. En el diseño de productos digitales, el comportamiento es mucho más importante que las opiniones. 
+    \item Utilizar una llamada-a-la-acción: se sabrá que la gente valora la solución cuando demuestren que la usan.
+\end{itemize}
+
+\subsubsection{Creación de prototipos}
+Una de las maneras más efectivas de crear los PMV es mediante un prototipo de la experiencia. \textit{Un prototipo es una aproximación de la experiencia de usuario que permite simular cómo será el uso del producto o servicio en cuestión}. Para que esa simulación sea efectiva deberá ser clicable (o bien tocarse con el dedo, dependiendo de la interfaz de usuario).
+Por otra parte, como hay que dedicar el mínimo esfuerzo posible a su desarrollo, será importante que se elija bien la herramienta para crearlo. La elección de una herramienta u otra para el prototipo depende de: 
+\begin{itemize}
+    \item Quién interactuará con él.
+    \item Qué esperas aprender de él.
+    \item Cuánto tiempo tienes para hacerlo.
+\end{itemize}
+  
+Existen muchos tipos de prototipos, todos con sus ventajas y desventajas:
+\begin{itemize}
+    \item Prototipos en baja fidelidad en papel.
+    \item Prototipos en baja fidelidad clickeables (wireframes)
+    \item Prototipos de media y alta fidelidad
+    \item Prototipos codificados
+\end{itemize}
+
+Una vez elegida la herramienta para crear el PMV se pueden comenzar la construcción. No hay necesidad de incluir en el prototipo la experiencia de usuario completa del producto. En lugar de eso, habrá que simular la parte más importante de esa experiencia. Se debe hacer foco en los flujos de trabajo principales que ilustran el PMV. De esta manera el equipo puede ver una parte específica de la experiencia de usuario (tal y como será) para que puedan valorar su validez y su eficacia.
 
 
 \section{Diseño colaborativo}
 
 \subsection{Mockup}
 
+\subsection{One Page / Single-page application}
+http://1.droppdf.com/files/A32RR/manning-single-page-web-applications-javascript-end-to-end-2014.pdf
+
+(https://theseus.fi/bitstream/handle/10024/97217/Kokkonen_Juha.pdf?sequence=1 ,pag 9)
+
+Las aplicaciones web de una sola página proporcionan una experiencia similar a las de escritorio en un navegador web estandar. 
+
+\subsection{Programación Reactiva}
+\subsection{Programación Reactiva (Manifiesto)}
+(traducción en odt)
+\begin{itemize}
+\item Responsivo:
+\item Resiliente:
+\item Elástico:
+\item Dirigido por Mensajes:
+\end{itemize}
+\subsection{Relación entre el patrón de diseño observable y la Programación Reactiva}
+(en vuejs odt)
+\subsection{--FrontEnd--}
+\subsection{vue.js}
+guia español: https://es-vuejs.github.io/vuejs.org/v2/guide/
+
+rendimiento vue
+https://www.kairosds.com/blog/vue-js-exito/
+
 \subsection{Guías de estilo: Bulma}
+\subsection{nuxt.js}
+
+Traduciendo libremente la explicación que aparece en la página de nuxt.js:
+
+    El 25 de octubre de 2016, el equipo detrás de zelt.co, anuncia Next.js, un framework para aplicaciones React renderizadas en el lado servidor. Pocas horas después de ese anuncio, la idea de crear aplicaciones renderizadas del lado servidor en Vue.js de la misma forma que Next.js era obvia. Nuxt.js había nacido.
+https://www.opsou.com/es/blog/nuxtjs-una-pieza-mas-del-ecosistema-vuejs-introduccion
 
 
-\begin{figure}
-\centering
-\includegraphics[width=9cm]{Img/UX/UX-proto1.jpg}
-\caption[Proto-persona (optional short caption)]{\label{us_figure} Mockup}
-\end{figure}
+Nuxt.js es un framework para crear aplicaciones universales en Vue.js. Una aplicación universal es aquella que su código puede ser ejecutado tanto en el cliente como en el servidor. Nuxt.js tiene muchas características, pero una de las más interesantes es que nos ayuda a crear aplicaciones Vue.js que se renderizan del lado del servidor (SSR – Server-Side Rendering). Esto quiere decir que se precargan las páginas en el servidor y luego se envía el HTML renderizado al navegador.
+https://www.groloop.com/vue-js-2-12-aplicaciones-vue-js-universales-con-nuxt-js/
+
+Una aplicación universal es aquella que comparte todo (o casi todo) su código entre el cliente y el servidor.
+https://medium.com/@sergiodxa/qu%C3%A9-es-una-aplicaci%C3%B3n-universal-f1258d030f25
+
+ventajas y desventajas
+https://github.com/i62navpm/Tutorial-Nuxt
+
+\subsection{--Backend--}
+\subsection{node.js}
+\subsection{express}
+\subsection{API RESTFUL}
+ver PDF: API REST y sistema de aprovisionamiento en containers para servIoTicy
+
+book: https://www.amazon.es/RESTful-API-Design-Practices-API-University-ebook/dp/B01L6STMVW
+
+Tesis Doctoral: http://www.ics.uci.edu/~fielding/pubs/dissertation/rest_arch_style.htm
+Artículo: https://www.infoq.com/articles/subbu-allamaraju-rest
+Book: https://pages.apigee.com/rs/apigee/images/api-design-ebook-2012-03.pdf (ver fuentes)
+Book: https://doc.lagout.org/programmation/Webservers/REST%20API%20Design%20Rulebook%20-%20Masse%20-%20O%27Reilly%20%282012%29/REST%20API%20Design%20Rulebook%20-%20Masse%20-%20O%27Reilly%20%282012%29.pdf
+
+Consideraciones de diseño 
+  - no verbos
+  - url en minuscula, no usar _ 
+  - usar uri
+  
+Metodos get/post/delete/etc
+
+\subsection{ORM: sequelize}
+http://docs.sequelizejs.com/
+
+\subsection{--test--}
+\subsection{¿Framework para test?}
+
 
 \section{MVP - Prototipado}
 \subsection{Prototipado rápido HTML más Bulma}

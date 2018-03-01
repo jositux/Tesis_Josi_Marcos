@@ -23,14 +23,6 @@
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% BIBLIOGRAPHY STYLE
-\bibliographystyle{unsrt}
-%\bibliographystyle{plain} for [1], [2] etc.
-%\bibliographystyle{apalike}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % OTHER FORMATTING/LAYOUT DECLARATIONS
 % Graphics
 \usepackage{graphicx,color}
@@ -79,17 +71,45 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
-\usepackage[
-backend=biber,
-style=numeric,
-sorting=none
-]{biblatex}
-\addbibresource{Referencias/bib.bib}
 
+
+%Import the natbib package and sets a bibliography  and citation styles
+\usepackage{natbib}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% BIBLIOGRAPHY STYLE
+\bibliographystyle{abbrvnat}
+%\bibliographystyle{plain} for [1], [2] etc.
+%\bibliographystyle{apalike}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\setcitestyle{authoryear,open={(},close={)}} %Citation-related commands
 
 
 \renewcommand{\theequation}{Ec.\arabic{equation}} % Agrega "Ec." en la numeración de las ecuaciones.
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% CODE
+
+\usepackage{minted}
+\usepackage{xcolor}
+\usepackage{listings}
+
+\definecolor{LightGray}{gray}{0.95}
+%\definecolor{DarkGray}{gray}{0.1}
+
+%\pagecolor{DarkGray}
+
+
+\usemintedstyle{tango}
+
+%New colors defined below
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+\lstset{aboveskip=60pt,belowskip=20pt}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%

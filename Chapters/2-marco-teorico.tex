@@ -46,7 +46,7 @@ Lógicamente, después de apuntar las características principales del diseño c
 \end{itemize}
 
 \subsection{Fuzzy Front End}
-La Figura \ref{fig:fuzzy} se muestra una representación simple del proceso de diseño. Se puede apreciar un gran y creciente énfasis en la parte delantera o de la izquierda, proceso llamado ``pre-diseño" \o el ``front end".
+La Figura \ref{fig:fuzzy} se muestra una representación simple del proceso de diseño. Se puede apreciar un gran y creciente énfasis en la parte delantera o de la izquierda, proceso llamado ``pre-diseño" o el ``front end".
 El Front End ``Difuso" en inglés  \textit{Fuzzy Front End} (FFE) suele denominarse de esa manera debido a la ambigüedad y la naturaleza caótica que lo caracterizan. Se puede definir en el diseño como \textit{el período comprendido entre el momento en que se examina por primera vez una idea y el momento en que se considera que esa idea está lista}\citep{schreiner}.
 
 \begin{figure}
@@ -146,7 +146,7 @@ Un ejemplo de software paramétrico masivamente utilizado es FreeCAD\footnote{\u
 
 
 En este trabajo se aborda el concepto de diseño computacional con la utilización de modelos 3D paramétricos. Es indispensable que los diseños se generen en función de sus parámetros y además expongan sus características de manera comprensible por todas las partes involucradas. \vskip
-Por ejemplo: un diseñador industrial puede comprender naturalmente parámetros como arista, vértices o normales pero un artista puede comprender sobre dimensiones, colores o materiales. En este caso es recomendable que los modelos 3D en este caso se presenten en función de los parámetros conocidos por el artista.
+Por ejemplo: un diseñador industrial puede comprender naturalmente parámetros como aristas, vértices, etc. pero un artista puede comprender sobre dimensiones, colores, materiales. En este caso es recomendable que los modelos 3D se presenten en función de los parámetros conocidos por el artista.
 Para ello surge la necesidad de una comunicación eficiente de los modelos 3D entre los interesados, y así gracias al diseño iterativo lograr la colaboración para generar nuevas soluciones.
 
 
@@ -1125,7 +1125,7 @@ de las rotaciones, los puntos que caen sobre el eje de rotación no se ven afect
 durante el giro. Si se renombran las matrices de rotación 3D, en términos de planos 
 de rotación, colocando como subíndices los ejes que forman dicho plano se tiene la \ref{eq:rotaciones}.
 
-Las Rotaciones principales 3D se cumple cuando el plano de rotación y el eje (n-2)-dimensional están formados por los ejes coordenados. También las \textit{Rotaciones Generales 3D} cuando el plano de rotación y el eje están definido por puntos arbitrarios y no mediante los ejes coordenados, sin embargo para los fines prácticos de este trabajo de investigación, es suficiente conocer los conceptos de las rotaciones principales.
+Las Rotaciones principales 3D se cumple cuando el plano de rotación y el eje (n-2)-dimensional están formados por los ejes coordenados. También existen las llamadas \textit{Rotaciones Generales 3D}, cuando el plano de rotación y el eje están definidos por puntos arbitrarios y no mediante los ejes coordenados, sin embargo para los fines prácticos de este trabajo de investigación, es suficiente conocer los conceptos de las rotaciones principales.
 \vskip
 
 \subsubsection{Transformaciones Compuestas}
@@ -2175,7 +2175,6 @@ La generación de ejemplares de primitivas se utiliza con frecuencia en objetos 
 Aunque se pueda construir una jerarquía de ejemplares de primitivas, cada ejemplar de nodo hoja sigue siendo un objeto definido por separado. En la generación de ejemplares de primitivas no hay medios para combinar objetos y crear uno nuevo de mayor nivel usando, por ejemplo, las operaciones booleanas regularizadas de conjuntos.\vskip
 Por lo tanto, la única forma de modelar un nuevo tipo de objeto es describiendo el mecanismo que lo define. Así mismo, es necesario escribir individualmente, para cada primitiva, las rutinas que dibujan el objeto o determinan sus propiedades de masa.
 
-\clearpage
 \subsection{Visualización de modelos booleanos}
 
 Para entender mejor cómo se efectúa la visualización de los modelos booleanos podemos recurrir al ray casting (porque consideramos se puede considerar como un subconjunto de ray tracing), recordemos brevemente cuál es la información disponible para decidir qué superficies son visibles y cuales no.
@@ -2293,6 +2292,7 @@ Los Sistemas de Modelado Booleano se pueden considerar un ``subconjunto" de los 
 
 Tanto el lenguaje de descripción como el lenguaje de representación interna pueden ser diferentes, aunque en este caso establezcan específicamente procesos CSG. Un ejemplo de esta situación son los lenguajes de descripción basados en python que pueden combinarse con varios softwares de representación interna como OpenCascade y CGAL.
 
+\clearpage
 \subsubsection{Modelado sólido en programas de diseño 3D}
 Existen muchos programas con herramientas para el modelado sólido y booleano como el caso de Blender\footnote{\url{http://blender.org}}, un programa informático FLOOS multiplataforma, dedicado especialmente al modelado, iluminación, renderizado, animación y creación de gráficos 3D. También puede realizar composición digital, edición de vídeo, escultura y pintura digital. Entre todas sus características provee mecanismos para asegurar que los modelos sean sólidos.
 
@@ -2330,12 +2330,13 @@ Los modificadores en Blender son operaciones automáticas que afectan a un objet
 \end{figure}
 
 La herramienta booleana nativa de Blender es excelente para partes simples o de modelado mecánico con resultados en tiempo real. Con complementos en inglés \textit{add-ons} se puede extender la aplicación booleana a modelos con mallas complejas, con muchos polígonos y que requieren una elevada potencia de cálculo.
-Cork\footnote{\url{https://github.com/dfelinto/cork-on-blender}} es un complemento para Blender que se desarrolló especialmente para el ámbito de la impresión 3D. En la imagen podemos ver un ejemplo de su potencia en operaciones booleanas.
+Cork\footnote{\url{https://github.com/dfelinto/cork-on-blender}} es un complemento para Blender que se desarrolló especialmente para el ámbito de la impresión 3D. En la Figura \ref{fig:cork} se puede ver un ejemplo de su potencia en operaciones booleanas aplicado a casos reales en la medicina.
 
 \begin{figure}[h]
-\includegraphics[width=12cm]{Img/Modelos/modelado23.jpg}
+\includegraphics[width=12cm]{Img/Modelos/corkc.jpg}
 \centering
-\caption{\textbf{ \footnotesize{Aplicación de modificadores booleanos con el add-on Cork. }}}
+\caption{\textbf{ \footnotesize{Ejemplo de modificadores booleanos con el add-on Cork y aplicaciones reales de prótesis médicas.   }}}
+\label{fig:cork}
 \end{figure}
 
 
@@ -2722,7 +2723,7 @@ Las transformaciones se realizan mediante operadores indicando el objeto a trans
 
 \clearpage
 \subsubsection{Operaciones booleanas especificadas en algoritmos}
-Las operaciones booleanas se realizan mediante operadores indicando el objeto a aplicar seguido de un “.” y la acción a realizar (interactuar, unir, substraer), como parámetro se indica el otro objeto. ej. \textbf{objeto1.unir(objeto2)}
+Las operaciones booleanas se realizan mediante operadores indicando el objeto a aplicar seguido de un “.” y la acción a realizar (intercectar, unir, substraer), como parámetro se indica el otro objeto. ej. \textbf{objeto1.unir(objeto2)}
 \vspace{5mm}
 
 \textbf{a)} Operaciones booleanas de los objetos \textbf{a} (cubo) y \textbf{b} (esfera). Ver Figura \ref{aCSG} \vskip
@@ -2770,7 +2771,7 @@ Los objetos solidos \textbf{a}, \textbf{b}, \textbf{c}, \textbf{d} y \textbf{e} 
 Operaciones booleanas combinadas:
 
 \begin{minted}[baselinestretch=1, bgcolor=LightGray]{python}
-    a.intersectar(b).substraer(c.union(d).union(e))
+    a.intersectar(b).substraer(c.unir(d).unir(e))
 \end{minted}
 
 \begin{figure}[h]
@@ -2780,13 +2781,13 @@ Operaciones booleanas combinadas:
 \label{aCSG}
 \end{figure}
 
+
 \begin{figure}[h]
-\includegraphics[width=16cm]{Img/Modelos/modelado16.jpg}
+\includegraphics[width=15cm]{Img/Modelos/modelado16.jpg}
 \centering
 \caption{\textbf{ \footnotesize{b) Operaciones booleanas combinadas }}}
 \label{bCSG}
 \end{figure}
-
 \clearpage
 
 \subsubsection{Polígonos (2D) especificados en algoritmos}
@@ -3018,7 +3019,7 @@ Una escena es un soporte para todos los objetos que componen un mundo en 3D, inc
 \begin{figure}[h]
 \includegraphics[width=15cm]{Img/WEB/web-three.jpg}
 \centering
-\caption{\textbf{\footnotesize{Ejemplo de aplicación con Three.js fuente:\url{http://carvisualizer.plus360degrees.com/threejs/} }}}
+\caption{\textbf{\footnotesize{Ejemplo de aplicación con Three.js fuente: \url{http://carvisualizer.plus360degrees.com/threejs/} }}}
 \label{fig:jopen}
 \end{figure}
 
@@ -3110,8 +3111,8 @@ Customizer es una manera sencilla de generar diseños colaborativos mediante la 
 Spekle\citep{UCL2018} es un proyecto desarrollado por \textit{The Bartlett School of Architecture UCL}\footnote{\url{https://www.ucl.ac.uk/bartlett/architecture/}} pensado para que los usuarios de Grasshopper puedan compartir diseños paramétricos en la web. 
 El proyecto consta de:
 \begin{itemize}
-    \item Un plugin Spekle que en combinación con Grasshopper permite establecer los parametros de los modelos y exportarlos a archivos SPK para luego visualizarlos en la web. En la Figura \ref{fig:plugin} se puede ver un ejemplo de uso.
-    \item Una aplicación web que permite subir archivos SPK para visualizar los modelos parimétricos con sus respectivas variables, crear versiones modificadas y registrar un historial de los cambios en los modelos. Ver \ref{fig:spekle}
+    \item Un plugin Spekle, que en combinación con Grasshopper permite establecer los parametros de los modelos y exportarlos a archivos SPK para luego visualizarlos en la web. En la Figura \ref{fig:plugin} se puede ver un ejemplo de uso.
+    \item Una aplicación web que permite subir archivos SPK para visualizar los modelos paramétricos con sus respectivas variables, crear versiones modificadas y registrar un historial de los cambios en los modelos. Ver \ref{fig:spekle}
 \end{itemize}
 
 \textbf{Beta.Spekle}\footnote{\url{http://beta.speckle.xyz/}} es la versión de desarrollo de la plataforma web y se publica como un proyecto FLOSS que acepta contribuciones de la comunidad.

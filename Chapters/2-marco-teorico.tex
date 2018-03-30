@@ -41,37 +41,42 @@ En el diseño colaborativo estos perfiles tienden a mezclarse: El usuario pasa a
 \item \textbf{b) Objetivo en común}\vskip
 La idea del objetivo compartido se plantea como una de las principales diferencias con respecto a los métodos tradicionales del diseño de productos o artefactos. Los métodos de diseño generalmente se planteaban para ser llevados a cabo por expertos que realizaban tareas individuales. Con el trabajo individual no era necesario compartir la visión del objetivo general del proceso de diseño. En cambio, el diseño colaborativo plantea que este punto es fundamental: Para que el equipo funcione correctamente necesita tener la visión del objetivo en común.
 
-Lógicamente, después de apuntar las características principales del diseño colaborativo, se infiere que el rol del diseñador en el proceso debe cambiar necesariamente al incluir este nuevos socios creativos en un entorno que tradicionalmente le pertenecía.
+Lógicamente, después de apuntar las características principales del diseño colaborativo, se infiere que el rol del diseñador en el proceso debe cambiar necesariamente al incluir este nuevos socios creativos en un entorno que tradicionalmente le pertenecía. En la Figura \ref{fig: co} se puede apreciar la diferencia de un esquema de co-diseño respecto al diseño clásico o tradicional.
 
 \end{itemize}
 
+
+\begin{figure}
+\centering
+\includegraphics[width=14cm]{Img/CPD/1-co.png}
+\caption{\textbf{\footnotesize{Diseño clásico vs co-diseño}}}
+\label{fig: co}
+\end{figure}
+
+
 \subsection{Fuzzy Front End}
-La Figura \ref{fig:fuzzy} se muestra una representación simple del proceso de diseño. Se puede apreciar un gran y creciente énfasis en la parte delantera o de la izquierda, proceso llamado ``pre-diseño" o el ``front end".
-El Front End ``Difuso" en inglés  \textit{Fuzzy Front End} (FFE) suele denominarse de esa manera debido a la ambigüedad y la naturaleza caótica que lo caracterizan. Se puede definir en el diseño como \textit{el período comprendido entre el momento en que se examina por primera vez una idea y el momento en que se considera que esa idea está lista}\citep{schreiner}.
+La Figura \ref{fig:fuzzy1} muestra una representación simple del proceso de diseño. Se puede apreciar un gran y creciente énfasis en la parte delantera o de la izquierda, proceso llamado \textit{pre-diseño} o \textit{front end}.
+El Front End Difuso en inglés  \textit{Fuzzy Front End} (FFE) suele denominarse de esa manera debido a la ambigüedad y la naturaleza caótica que lo caracteriza. El FFE se puede definir en el diseño como \textit{el período comprendido entre el momento en que se examina por primera vez una idea y el momento en que se considera que esa idea está lista} \citep{schreiner}.
 
 \begin{figure}
 \centering
-\includegraphics[width=12cm]{Img/CPD/cpd-fuzzy.jpg}
-\caption[(optional short caption)]{\label{fig:fuzzy} Fuzzy Front End y proceso de diseño}
+\includegraphics[width=14cm]{Img/CPD/cpd-fuzzy.png}
+\caption{\textbf{\footnotesize{Fuzzy Front End y el proceso de diseño}}}
+\label{fig:fuzzy1}
 \end{figure}
 
-\begin{figure}
-\centering
-\includegraphics[width=12cm]{Img/CPD/cpd-fuzzi2.jpg}
-\caption[(optional short caption)]{\label{fig:fuzzy} Fuzzy Front End y diseño de un producto}
-\end{figure}
 
-En el FFE, a menudo no se sabe si el resultado del proceso de diseño será un producto, un servicio, una interfaz, etc. Los puntos de vista de muchas fuentes se unen en esta fase cada vez más crítica, p. comprensión de los usuarios y contextos de uso, investigación y selección de oportunidades tecnológicas tales como nuevos materiales, tecnologías de la información, etc. El objetivo de las investigaciones es determinar qué se diseñará y, a veces, qué no se debe diseñar y fabricar. El FFE es seguido por los procesos de diseño clásico donde las ideas resultantes para el producto, servicio, interfaz, etc., se desarrollan primero en conceptos, y luego en prototipos que se perfeccionan sobre la base de los comentarios de los futuros usuarios.
+En el FFE, a menudo no se sabe si el resultado del proceso de diseño será un producto, un servicio, una interfaz, etc. Los puntos de vista de muchas fuentes se unen en esta fase cada vez más crítica, para comprensión de los usuarios y contextos de uso, investigación y selección de oportunidades tecnológicas tales como nuevos materiales, tecnologías de la información, etc. El objetivo de las investigaciones es determinar qué se diseñará y, a veces, qué no se debe diseñar. El FFE es seguido por los procesos de diseño clásico donde las ideas resultantes para el producto, servicio, interfaz, etc., se desarrollan primero en conceptos, y luego en prototipos que se perfeccionan sobre la base de los comentarios de los futuros usuarios.
 
 Es una fase larga y poco comprendida, pero generalmente llena de oportunidades de mejora que pueden analizarse cuantitativamente y transformarse en beneficios para los proyectos. Las ideas difusas contienen elementos que pueden tener éxito o fallar y por lo tanto, esta fase necesita ser gestionada cuidadosamente. El prototipo de este trabajo de investigación pretende en cierta medida reducir el tiempo de esta etapa, brindando soporte a los participantes mediante herramientas tecnológicas. En la sección \ref{chap: cap3} de desarrollo se pueden ver las estrategias para lograrlo.
 
-
-
 \begin{figure}
 \centering
-\includegraphics[width=12cm]{Img/CPD/1-CO.png}
-\caption[(optional short caption)]{\label{us_figure} Diseño Clásico vs Co-diseño}
+\includegraphics[width=12cm]{Img/CPD/cpd-fuzzy2.png}
+\caption{\textbf{\footnotesize{Fuzzy Front End desde la perspectiva del desarrollo}}}
+\label{fig:fuzzy2}
 \end{figure}
+
 
 
 \clearpage
@@ -123,7 +128,7 @@ El autor Nigel Cross \citep{Kaled2016} también afirma que es necesaria una repr
 
 
 \subsection{CAD Paramétrico}
-
+\label{cadparam}
 Lo innovador del modelo de Gaudí, explicado la sección \ref{disenoparam} radica en que éste calcula automáticamente los resultados, porque que al mover un parámetro se afecta todo el modelo, que a pesar de ser análogo, marcó el inicio de la actualización en tiempo real de geometrías con bases matemáticas, lo cuál le da el énfasis utilitario de explorar las posibilidades que el modelo ofrece (ver Figura \ref{fig:gaudi}).
 Esto marcó la \textit{necesidad de facilitar la interacción entre el diseñador y el modelo}, que implicaba muchas representaciones manuales y modificaciones completas con cada cambio. \vskip 
 No fue hasta la aparición de las computadoras y el primer programa CAD, \textit{Sketchpad} de Ivan Sutherland en 1963 que se facilitó la interacción en tiempo real del diseñador y la computadora. Yüksel \citep{Kaled2016} lo describe como un sistema que tenía un puerto de entrada con un modelo de límites que promovía la interacción, porque al manipular una parte del modelo afectaría los cambios geométricos en otro. En el contexto de aparición de este programa, el proceso de diseño era enteramente manual y análogo, donde un cambio mínimo significaría comenzar de nuevo. Al representar las geometrías en dos dimensiones en la computadora se facilitaba el proceso de diseño. A partir de esto se fueron desarrollando un amplio número de software cuyas capacidades y posibilidades se extendían con aquellas del procesamiento de datos de las computadoras.\vskip
@@ -189,7 +194,7 @@ En función de la naturaleza del diseño como trabajo colaborativo, el \textit{C
 que un programa de computadora, por ejemplo, sistemas CAD de una variedad de empresas y otros tipos de programas de computadora, como herramientas de análisis.\vskip
 Tanto el hardware como las tecnologías de software evolucionaron para admitir la comunicación y el acceso multiusuario a los datos de diseño, la forma de acceso varía desde archivos compartidos hasta accesos compartidos mediante Sistemas de Gestión de Bases de Datos en inglés \textit{Data Base Management System} (DBMS)\footnote{\url{https://en.wikipedia.org/wiki/Database}}. El modelado de los datos de diseño proporciona la base para establecer el semántica de los datos compartidos. Se supone que en \textit{el CAD distribuido permite el acceso a los datos de diseño a través de un sistema de CAD predeterminado o bien un DBMS}.\vskip
 Los esfuerzos hacia la integración del CAD generaron como resultado el desarrollo de varios formatos  estándares para el intercambio de datos en ingles \textit{Data Exchange}, así como muchos "no estándares". Los formatos estándares de intercambio han variado desde formatos para datos de dibujo técnico hasta formatos para modelos de productos. 
-DXF\footnote{\url{https://es.wikipedia.org/wiki/DXF}} e IGES\footnote{ \url{https://es.wikipedia.org/wiki/IGES}} son algunos formatos que resultaron de los esfuerzos en el intercambio de bases de datos de gráficos entre sistemas CAD.\vskip
+DXF\footnote{\url{https://es.wikipedia.org/wiki/DXF}} e IGES{\url{https://wiki.eclipse.org/IGES_file_Specification}} son algunos formatos que resultaron de los esfuerzos en el intercambio de bases de datos de gráficos entre sistemas CAD.\vskip
 
 La falta de características de diseño en los estándares de intercambio de datos, como topología, relación entre objetos, etc., obligó un cambio en el enfoque hacia los estándares de \textit{intercambio de datos de productos}. El enfoque en el modelado de productos (por ejemplo, PDES- STEP\footnote{\url{https://pdesinc.org/}}, etc.) han puesto énfasis en el modelado sólido 3D, en la geometría, las características esenciales de los modelos, los datos no geométricos y el modelando del producto como un conjunto de conceptos u objetos.
 
@@ -222,7 +227,7 @@ Los diseñadores requieren diferentes vistas del diseño y tienen intereses sust
 El desarrollo del soporte informático para la colaboración sincrónica se puede lograr mediante un espacio de trabajo compartido, como se ilustra en la Figura \ref{fig:espacio0}. El espacio de trabajo compartido es el medio a través del cual se produce la comunicación entre los participantes en el diseño colaborativo. Un espacio de trabajo compartido no solo proporciona una comunicación visual flexible y efectiva, sino que también proporciona un medio en el que un diseñador puede comprender el modelo/diseño de otro participante sin necesidad de tener el mismo vocabulario. Por lo tanto, también es importante compartir la representación subyacente de los elementos de diseño en el espacio de trabajo.
 
 \begin{figure}[h]
-\includegraphics[width=12cm]{Img/CPD/cad-shared0.png}
+\includegraphics[width=14cm]{Img/CPD/cad-shared0.png}
 \centering
 \caption{\textbf{\footnotesize{Espacio de trabajo compartido}}}
 \label{fig:espacio0}
@@ -240,7 +245,7 @@ Se consideran dos categorías de espacio de trabajo:
     \item Representación visual compartida y
     \item Representación subyacente compartida.
 \end{enumerate}
-La necesidad de mantener dos formas de representación compartida proviene de los requisitos de un sistema multiusuario en el que los participantes puedan ver el trabajo de los demás, proporcionado por la representación visual compartida (modelo 3D), con la posibilidad de que el sistema mantenga una o más representaciones de la solución de diseño (versiones) y cualquier conocimiento de dominio relevante proporcionado por la representación subyacente (archivos extra). Los cuatro componentes nesesarios para cumplir esto son:
+La necesidad de mantener dos formas de representación compartida proviene de los requisitos de un sistema multiusuario en el que los participantes puedan ver el trabajo de los demás, proporcionado por la representación visual compartida (modelo 3D), con la posibilidad de que el sistema mantenga una o más representaciones de la solución de diseño (versiones) y cualquier conocimiento de dominio relevante proporcionado por la representación subyacente (archivos extra). Los cuatro componentes necesarios para cumplir esto son:
 
 \begin{enumerate}
     \item \textit{Servidor de sesión}. Inicia el proceso de solicitud que se encarga de configurar la sesión para el diseño colaborativo.
@@ -250,7 +255,7 @@ La necesidad de mantener dos formas de representación compartida proviene de lo
 \end{enumerate}
 
 \begin{figure}[h]
-\includegraphics[width=14cm]{Img/CPD/cad-shared1.jpg}
+\includegraphics[width=14cm]{Img/CPD/cad-shared1.png}
 \centering
 \caption{\textbf{\footnotesize{Modelo de sistema CAD colaborativo}}}
 \label{fig:sistemaco}
@@ -259,7 +264,7 @@ La necesidad de mantener dos formas de representación compartida proviene de lo
 
 
 Las herramientas de diseño CAD tradicionales fueron pensadas para un usuario, por ende tienen limitaciones para soportar el entorno de desarrollo colaborativo de productos CPD y de forma rápida como requiere el mercado. En un proceso de desarrollo distribuido, se necesita una comunicación efectiva y de alta velocidad porque la mayoría de los errores de diseño se deben a la falta de comunicación entre los equipos de diseño distribuidos.\vskip
-Los sistemas de información distribuída que se han aplicado para CPD se pueden clasificar en 3: 
+Los sistemas de información distribuída que se han aplicado para CPD se pueden clasificar en tres: 
 \begin{itemize}
     \item \textit{Web services}
     \item \textit{Remote services}
@@ -280,9 +285,9 @@ Tomando como referencia la definición anterior, podemos definir la \textbf{Info
 La información gráfica con que trabaja la IG puede estar dada por conjuntos de infinitos puntos, definidos en espacios continuos, o bien por conjuntos finitos definidos sobre espacios discretos, es decir, direccionables exclusivamente mediante números enteros. En el diagrama de la Figura \ref{fig:grafica0} podemos ver los cuatro tipos de información gráfica en los espacios 2 y 3D.
 
 \begin{figure}[h]
-\includegraphics[width=14cm]{Img/CPD/grafica0.jpg}
+\includegraphics[width=8cm]{Img/CPD/grafica0.png}
 \centering
-\caption{\textbf{\footnotesize{Modelo de sistema CAD colaborativo}}}
+\caption{\textbf{\footnotesize{ espacios de trabajo básicos en la Informática Gráfica}}}
 \label{fig:grafica0}
 \end{figure}
 
@@ -297,7 +302,7 @@ Según esto, se puede pensar en clasificar los diferentes campos y procesos de l
 Entonces, si relacionamos mediante una flecha la clase de información de entrada que requiere un proceso o sistema gráfico, con el tipo de información de salida generada por éste, a partir del diagrama de la Figura \ref{fig:grafica0} e incorporando la información numérica, se puede construir un diagrama, tal como se muestra en la Figura \ref{fig:grafica1}, donde quedan especificados los principales campos de la IG.
 
 \begin{figure}[h]
-\includegraphics[width=10cm]{Img/CPD/grafica1.jpg}
+\includegraphics[width=16cm]{Img/CPD/grafica1.png}
 \centering
 \caption{\textbf{\footnotesize{Campos más significativos de actuación de la Informática Gráfica}}}
 \label{fig:grafica1}
@@ -305,14 +310,14 @@ Entonces, si relacionamos mediante una flecha la clase de información de entrad
 
 En el diagrama anterior aparecen los principales campos que abarca la IG, así como algunos de los procesos más comunes, como son los de conversión de unos tipos de información a otros. Además, es importante señalar que las flechas del diagrama indican el objetivo final del campo de estudio o del proceso, y no necesariamente el camino seguido para alcanzar dicho objetivo. Por ejemplo, en la Síntesis de Imágenes, uno de los métodos para conseguir una imagen raster a partir del modelo vectorial 3D, genera una imagen vectorial como paso previo a la obtención de la imagen raster.
 
-A continuación definimos los dos campos de la IG que son objetos de estudio en el trabajo de investigación: La \textit{Síntesis de Imágen} y el \textit{Modelado}. En la Figura \ref{fig:grafica2} queda definido el diagrama de estudio.
+A continuación definimos los dos campos de la IG que son objetos de estudio en este trabajo de investigación: La \textit{Síntesis de Imágen} y el \textit{Modelado}. En la Figura \ref{fig:grafica2} queda definido el diagrama específicos para el trabajo de investigación.
 
 
 
 \begin{figure}[h]
-\includegraphics[width=14cm]{Img/CPD/grafica2.jpg}
+\includegraphics[width=10cm]{Img/CPD/grafica2.png}
 \centering
-\caption{\textbf{\footnotesize{Campos de la Informática Gráfica definidos para el estudio}}}
+\caption{\textbf{\footnotesize{Campos de la Informática Gráfica definidos para el trabajo de investigación}}}
 \label{fig:grafica2}
 \end{figure}
 
@@ -327,18 +332,18 @@ La visualización o ``rendering" se produce en función de las condiciones estab
 Esquemáticamente, el objetivo principal de un sistema gráfico se resume en la Figura \ref{fig:grafica3}.
 
 \begin{figure}[h]
-\includegraphics[width=8cm]{Img/CPD/grafica3.jpg}
+\includegraphics[width=7cm]{Img/CPD/grafica3.png}
 \centering
 \caption{\textbf{\footnotesize{Rasterización de una imagen}}}
 \label{fig:grafica3}
 \end{figure}
 
 \subsubsection{Estructuración de la Síntesis de Imágenes}
-Como toda disciplina la Síntesis de Imágenes se organiza y subdivide en campos de trabajo, principalmente para evitar la mezcla de conceptos, y facilitar así su estudio. Para ello, se busca y aplicar uno o más criterios de organización que permitan la estructuración coherente del área. Son dos los criterios principales que se utilizan: \textit{el método de síntesis de imágenes utilizado, y el modelo de iluminación que se aplica}.
+Como toda disciplina, la Síntesis de Imágenes se organiza y subdivide en campos de trabajo, principalmente para evitar la mezcla de conceptos, y facilitar así su estudio. Para ello, se busca y aplicar uno o más criterios de organización que permitan la estructuración coherente del área. Son dos los criterios principales que se utilizan: \textit{el método de síntesis de imágenes utilizado, y el modelo de iluminación que se aplica}.
 
 \begin{description}
 
-\item \textbf{a) Métodos de síntesis de las imágenes} \vskip
+\item \textbf{a) Métodos de síntesis de imágenes} \vskip
 El criterio principal que se utiliza en la estructuración de la Síntesis de Imágenes es \textit{el camino que se sigue (método) para sintetizar las imágenes raster}.
 
 \begin{enumerate}
@@ -346,7 +351,7 @@ El criterio principal que se utiliza en la estructuración de la Síntesis de Im
     Como se indica en la Figura \ref{fig:grafica4}, la información se busca en el espacio vectorial, según las condiciones del visor, formando (mediante proyecciones) una imagen vectorial. Si se dispusiese de un monitor vectorial, la imagen creada podría ser mostrada directamente en dicho monitor. Sin embargo, hoy en día la mayor parte de los monitores son de tipo raster, lo que significa que la imagen vectorial se debe rasterizar, para que pueda ser mostrada en esta clase de monitores.
     
     \begin{figure}[h]
-    \includegraphics[width=6cm]{Img/CPD/grafica4.jpg}
+    \includegraphics[width=6cm]{Img/CPD/grafica4.png}
     \centering
     \caption{\textbf{\footnotesize{método de síntesis estándar}}}
     \label{fig:grafica4}
@@ -356,7 +361,7 @@ El criterio principal que se utiliza en la estructuración de la Síntesis de Im
     La imagen raster se forma buscando la información gráfica directamente del espacio vectorial. Para ello, se utilizan una serie de procesos que emulan el movimiento y características de la luz natural. La Figura \ref{fig:grafica5} muestra un esquema de este camino de síntesis, al cual se le denomina método directo de síntesis, o simplemente síntesis directa
     
     \begin{figure}[h]
-    \includegraphics[width=6cm]{Img/CPD/grafica5.jpg}
+    \includegraphics[width=7cm]{Img/CPD/grafica5.png}
     \centering
     \caption{\textbf{\footnotesize{método de síntesis directa}}}
     \label{fig:grafica5}
@@ -365,7 +370,7 @@ El criterio principal que se utiliza en la estructuración de la Síntesis de Im
      \item La tercera y última ruta mostrada en la Figura \ref{fig:grafica6}, aunque se emplea con frecuencia en la visualización volumétrica, no se utiliza en la Síntesis de imágenes, ya que no se consigue mayor calidad en las imágenes, pudiendo incluso disminuir en muchos casos. En cambio, el camino inverso sí es frecuentado, pues la conversión de la información volumétrica en vectorial (isosurfacing) permite la visualización por cualquiera de los métodos anteriores.
     
     \begin{figure}[h]
-    \includegraphics[width=6cm]{Img/CPD/grafica6.jpg}
+    \includegraphics[width=7cm]{Img/CPD/grafica6.png}
     \centering
     \caption{\textbf{\footnotesize{Renderizado directo de volúmenes (DVR)}}}
     \label{fig:grafica6}
@@ -376,7 +381,7 @@ El criterio principal que se utiliza en la estructuración de la Síntesis de Im
 
 
 \item \textbf{b) Modelos de Iluminación} \vskip
-El objetivo final de los modelos de iluminación es \textit{determinar la cantidad (intensidad) y el color de la luz que llega a un punto dado en la superficie de los objetos. Para ello, modelan una serie de efectos lumínicos, como la transparencia, reflexiones de la luz, textura de las superficies y sombras}. Estos efectos luminosos dependen del número, tamaño y posición de las fuentes de luz, por lo cual los modelos de iluminación han de tener en cuenta dichas fuentes.
+El objetivo final de los modelos de iluminación es \textit{determinar la cantidad (intensidad) y el color de la luz que llega a un punto dado en la superficie de los objetos. Para ello, modelan una serie de efectos lumínicos, como la transparencia, reflexiones de la luz, textura de las superficies y sombras}. Estos efectos luminosos dependen del número, tamaño y posición de las fuentes de luz, por lo cual los modelos de iluminación han de tener en cuenta dichas fuentes. Los 3 tipos de modelos de iluminación más comunes son:
 
 \begin{enumerate}
     \item \textbf{Modelos Locales}\vskip
@@ -390,18 +395,35 @@ El objetivo final de los modelos de iluminación es \textit{determinar la cantid
 Lo que diferencia a un modelo global de uno semiglobal es si el modelo realiza o no cálculos ajustados sobre la iluminación debida a la luz difusa, ya que ésta es una de las cuestiones más difíciles de evaluar. Por lo tanto, es posible considerar los modelos globales como una extensión de los semiglobales, incorporando el cálculo de la aportación difusa.
 Como era de esperar, los modelos de iluminación computacionalmente más económicos y sencillos son los modelos locales, y los más caros y complejos los globales. Sin embargo, la complejidad y el tiempo de cálculo extra en los modelos semiglobales y globales quedan compensados con una mayor calidad de las imágenes sintetizadas.
 
-\item \textbf{c) Compatibilidad entre los métodos de síntesis y los modelos de iluminación} \vskip
-Para un método de síntesis dado, algunos modelos de iluminación son más fáciles de implantar que otros, dependiendo de la naturaleza del método y de la complejidad del modelo de iluminación.\vskip
+\item \textbf{c)   Compatibilidad entre los métodos de síntesis y los modelos de iluminación} \vskip
+Para un método de síntesis dado, algunos modelos de iluminación son más fáciles de implementar que otros, dependiendo de la naturaleza del método y de la complejidad del modelo de iluminación.\vskip
 Así, los modelos locales pueden ser aplicados sin dificultad tanto en la síntesis estándar, como en la directa. En cambio, los modelos semiglobales son más fáciles de implantar en la síntesis directa, aunque también es posible utilizarlos en la síntesis estándar, si bien, al precio de un aumento considerable en la complejidad de los algoritmos.\vskip
 Por otro lado, es más fácil utilizar los resultados de los cálculos sobre la luz difusa en la síntesis estándar que en la directa. Esto lleva a la necesidad de los planteamientos de síntesis híbridos, para incorporar en los modelos semiglobales (síntesis directa) los resultados de los cálculos sobre la aportación difusa (síntesis estándar).
 
-\item \textbf{d) Procesos de visualización}\vskip
+\item \textbf{d)   Procesos de visualización}\vskip
 
 A la utilización conjunta de un método de síntesis y de un modelo de iluminación (que obviamente han de ser compatibles entre sí), se suele llamar \textbf{proceso de visualización}.\vskip
 Cada proceso de visualización constituye un área de especialización dentro de la Síntesis de Imágenes, debido principalmente a las diferencias existentes entre las técnicas utilizadas en los métodos de síntesis estándar y el directo.
-Teniendo en cuenta los métodos de síntesis, los modelos de iluminación y las compatibilidades entre ellos, en la tabla 2 queda establecida la estructuración actual de la Síntesis de Imágenes. 
+Teniendo en cuenta los métodos de síntesis, los modelos de iluminación y las compatibilidades entre ellos, en la siguiente tabla se puede apreciar la estructuración actual de la Síntesis de Imágenes. 
 
-En ella aparecen los diferentes procesos de visualización (campos) de la Síntesis de Imágenes:
+\vspace{5mm}
+\begin{tabular}{|p{4.5cm}|p{2.7cm}|p{2.7cm}|p{2.7cm}|}
+\cline{2-4}
+\multicolumn{1}{c}{}&\multicolumn{3}{|c|}{\textbf{Modelos de Iluminación}}\\
+\hline
+\centering\textbf{Métodos de Síntesis}  & \centering{Locales} & \centering{Semiglobales} & \centering{Globales} \tabularnewline
+\hline
+\centering{Síntesis Estándar}  & \centering{visualización estándar, rendering} & \centering{rendering (mejorado)} & \centering{radiosidad (radiosity)} \tabularnewline
+\hline
+\centering{Síntesis Directa}  & \centering{Ray Casting} & \centering{Ray Tracing} & \centering{-} \tabularnewline
+\hline
+\centering{Síntesis Híbrida}  & \centering{-} & \centering{-} & \centering{radiosidad (mejorado)} \tabularnewline
+\hline
+\end{tabular}
+\vspace{2mm}
+
+En ella aparecen los diferentes procesos de visualización (campos) de la Síntesis de Imágenes nombrados según la terminología
+de uso más frecuente en castellano.
 
 \vskip
 
@@ -410,21 +432,19 @@ En ella aparecen los diferentes procesos de visualización (campos) de la Sínte
     Es el proceso de visualización más difundido, ya que no requiere equipos demasiado potentes para conseguir, en un tiempo razonable, imágenes de calidad aceptable. Cuando el proceso incorpora técnicas de los modelos de iluminación semiglobales, usualmente se continua utilizando el mismo término, o bien simplemente se le añade el calificativo de “mejorado” (enhanced).
     
     \item \textbf{Ray Tracing}\vskip
-    El algoritmo trazador de rayos en inglés ray tracing, inicialmente era desechado debido al gran potencial de cálculo que requiere, lo que implicaba una gran lentitud en la generación de las imágenes. Sin embargo, a medida que iba aumentando la velocidad de las computadoras y mejorando las técnicas de aceleración del algoritmo ray tracing fue ganando adeptos, debido sobre todo a la gran calidad de las imágenes que genera. Hoy día, no existe prácticamente ningún sistema gráfico que no ofrezca la posibilidad de generar imágenes mediante este algoritmo. El algoritmo trazador de rayos es más rápido y fácil de implantar si se aplica un modelo local \textbf{ray casting} aunque, claro está, la calidad de las imágenes obtenidas es inferior.
+    El algoritmo trazador de rayos en inglés \textit{ray tracing}, inicialmente era desechado debido al gran potencial de cálculo que requiere, lo que implicaba una gran lentitud en la generación de las imágenes. Sin embargo, a medida que iba aumentando la velocidad de las computadoras y mejorando las técnicas de aceleración del algoritmo, fue ganando adeptos principalmente por la gran calidad de imágenes que puede generar. Hoy en día, no existe prácticamente ningún sistema gráfico que no ofrezca la posibilidad de generar imágenes mediante este algoritmo. El algoritmo trazador de rayos es más rápido y fácil de implementar si se aplica un modelo local \textbf{ray casting} aunque, claro está, la calidad de las imágenes obtenidas es inferior.
     
     \item \textbf{Radiosity}\vskip
-    Basándose en técnicas utilizas en la calorimetría, hacia finales de 1980 fueron desarrollados procesos para el cálculo de la aportación luminosa debida a la luz difusa. Con ello aparecieron los modelos globales y un nuevo campo de la Síntesis de Imágenes, conocido como algoritmo de radiosidad o radiosity. Este algoritmo es uno de los más utilizados en la gráfica de alto \textcolor{red}{standing} debido a la gran calidad de las imágenes que sintetiza. 
-    
-    \begin{figure}[h]
-    \includegraphics[width=12cm]{Img/CPD/grafica7.png}
-    \centering
-    \caption{\textbf{\footnotesize{Comparación de ray tracing con ray tracing + radiosity}}}
-    \label{fig:grafica7}
-    \end{figure}
-    
+    Basándose en técnicas utilizas en la calorimetría, hacia finales de 1980 fueron desarrollados procesos para el cálculo de la aportación luminosa debida a la luz difusa. Con ello aparecieron los modelos globales y un nuevo campo de la Síntesis de Imágenes, conocido como algoritmo de radiosidad o \textit{radiosity}. Este algoritmo es uno de los más utilizados en la gráfica con resultados realistas debido a la gran calidad de las imágenes que sintetiza. En la Figura \ref{fig:grafica7} se puede apreciar una comparación de resultados visuales.
 \end{enumerate}
 
-ACA VA LA TABLA
+\begin{figure}[h]
+\includegraphics[width=12cm]{Img/CPD/grafica7.png}
+\centering
+\caption{\textbf{\footnotesize{Comparación de ray tracing con ray tracing + radiosity}}}
+\label{fig:grafica7}
+\end{figure}
+
 
 \item \textbf{e) Características comunes en los procesos de visualización}\vskip
 
@@ -446,7 +466,7 @@ Aunque las técnicas utilizadas en los procesos de visualización difieren de un
 \label{section:ray-concept}
 
 \textit{Todos los rayos de luz que atraviesen la pantalla han de converger en el punto de visión (ojo)}, esto es conocido como \textbf{modelo de ventana}. 
-Si se traza un rayo desde el punto de visión a cada píxel de la pantalla, y se prolongan dichos rayos hasta que intersequen con los objetos que se encuentren en su camino, entonces es posible averiguar con qué objetos intersecan y el color de las superficies donde intersecan. Si se pinta los píxeles correspondiente con el color de los puntos de intersección, se obtiene la imagen del objeto que se trata de visualizar como en la Figura \ref{fig:ojo}. Los objetos visualizados son aquellos que se encuentran dentro del volumen de la pirámide, cuyas aristas pasan por los vértices de la ventana, y convergen en el punto de visión. En definitiva, el principio en el que se basa el algoritmo de ray tracing es el de trazar una línea entre el punto de visión y el espacio de objetos (modelos), a través de cada píxel de la pantalla. \vskip
+Si se traza un rayo desde el punto de visión a cada píxel de la pantalla, y se prolongan dichos rayos hasta que intersequen con los objetos que se encuentren en su camino, entonces es posible averiguar con qué objetos intersecan y el color de las superficies donde intersecan. Si se pintan los píxeles correspondiente con el color de los puntos de intersección, se obtiene la imagen del objeto que se trata de visualizar como en la Figura \ref{fig:ojo}. Los objetos visualizados son aquellos que se encuentran dentro del volumen de la pirámide, cuyas aristas pasan por los vértices de la ventana, y convergen en el punto de visión. En definitiva, el principio en el que se basa el algoritmo de ray tracing es el de trazar una línea entre el punto de visión y el espacio de objetos (modelos), a través de cada píxel de la pantalla. \vskip
 En el modelo de ventana, si un fotón llega al ojo del observador, necesariamente ha tenido que cruzar la pantalla siguiendo la dirección del rayo.
 Entonces, si se trazan exclusivamente los rayos de luz que parten del punto de visión, a través de los píxeles de la pantalla hacia el espacio vectorial (conocidos como rayos primarios), se asegura que el sistema gráfico trabaje únicamente con los rayos útiles. Cuando el trazado de rayos se realiza de esta forma, es conocido como \textbf{trazado hacia atrás}. 
 Dado el ahorro de cálculos que implica el invertir el recorrido de los fotones, el trazado de rayos hacia atrás es el procedimiento utilizado. Por tanto, siempre que se trate de ray casting o ray tracing, ambos algoritmos efectúan el trazado hacia atrás. 
@@ -455,16 +475,16 @@ Dado el ahorro de cálculos que implica el invertir el recorrido de los fotones,
  \begin{figure}[h]
     \includegraphics[width=12cm]{Img/GEO/geo-ojo1.png}
     \centering
-    \caption{\textbf{\footnotesize{trazado de los píxeles }}}
+    \caption{\textbf{\footnotesize{trazado de rayos hacia atrás partiendo del punto de visión hacia el objeto}}}
     \label{fig:ojo}
     \end{figure}
     
 Cualquiera que sea el método de visualización aplicado, el paso previo a la obtención de las imágenes es siempre el de colocar convenientemente los elementos del escenario (objetos, visor y fuentes) en un espacio de referencia
 común, al que se llama \textbf{Sistema Universal de Referencia} \textbf{(SUR)}. Excepto las fuentes puntuales, normalmente los demás elementos del escenario poseen su propio sistema de referencia, siendo el \textbf{SRV} el \textbf{Sistema de Referencia del Visor}, y el \textbf{SRO} el \textbf{Sistema de Referencia de los Objetos}.
-A menudo, las características del sistema de referencia general (SUR) y de los sistemas locales coinciden, aunque también es frecuente que la orientación del SRV sea opuesta a la del SUR. Por ejemplo, en la Figura \ref{fig:grafica8} vemos un SUR con orientación hacia la izquierda1, y un SRV con orientación hacia la derecha.
+A menudo, las características del sistema de referencia general (SUR) y de los sistemas locales coinciden, aunque también es frecuente que la orientación del SRV sea opuesta a la del SUR. Por ejemplo, en la Figura \ref{fig:grafica8} vemos un SUR con orientación hacia la izquierda, y un SRV con orientación hacia la derecha.
 
  \begin{figure}[h]
-    \includegraphics[width=8cm]{Img/CPD/grafica8.jpg}
+    \includegraphics[width=10cm]{Img/CPD/grafica8.png}
     \centering
     \caption{\textbf{\footnotesize{ sistemas de referencia ortogonales con orientación opuesta }}}
     \label{fig:grafica8}
@@ -474,10 +494,10 @@ A menudo, las características del sistema de referencia general (SUR) y de los 
     
 \subsubsection{Explicación del algoritmo}
 
-Los modelos de iluminación semiglobales, además de considerar la contribución de las fuentes de luz, también tienen en cuenta la luz reflejada y la transmitida procedente de los objetos circundantes. El algoritmo trazador de rayos (ray tracing), que es una generalización del algoritmo de ray casting, utiliza un modelo de iluminación semiglobal.
+Los modelos de iluminación semiglobales, además de considerar la contribución de las fuentes de luz, también tienen en cuenta la luz reflejada y la transmitida procedente de los objetos circundantes. El algoritmo ray tracing se considera una generalización del algoritmo de ray casting y utiliza un modelo de iluminación semiglobal.
 Así, en la versión típica del algoritmo de ray tracing, el color (intensidad) en un punto de intersección rayo-superficie cualquiera viene determinado por tres tipos de aportaciones lumínicas:
 \begin{itemize}
-    \item Por un lado está la contribución o color local, que se debe a la iluminacióndirecta de las fuentes, y la luz ambiental. En definitiva, se trata de aplicar el modelo de iluminación local utilizado en ray casting.
+    \item Por un lado está la contribución o color local, que se debe a la iluminación directa de las fuentes, y la luz ambiental. En definitiva, se trata de aplicar el modelo de iluminación local utilizado en ray casting.
     \item Por otro lado está la contribución o color reflejado, que consiste en la luz que llega al punto de intersección desde los objetos circundantes, siguiendo la trayectoria de reflexión de la luz.
     \item Por último, el algoritmo de ray tracing también cuenta con la aportación del color transmitido, que se debe la luz que llega al punto de intersección después de cruzar (traspasar) los objetos vecinos (si es que son transmisores de la luz), siguiendo la trayectoria de transmisión. 
 
@@ -486,13 +506,21 @@ Así, en la versión típica del algoritmo de ray tracing, el color (intensidad)
 En la Figura \ref{fig:grafica9} se pueden apreciar las tres contribuciones en un punto de intersección rayo-superficie dado.
 
 \begin{figure}[h]
-    \includegraphics[width=8cm]{Img/CPD/grafica9.jpg}
+    \includegraphics[width=10cm]{Img/CPD/grafica9.png}
     \centering
-    \caption{\textbf{\footnotesize{ modelo de iluminación semiglobal utilizado con el algoritmo de ray tracing  }}}
+    \caption{\textbf{\footnotesize{ modelo de iluminación semiglobal utilizado con ray tracing  }}}
     \label{fig:grafica9}
 \end{figure}
 
+\begin{description}
+\item \textbf{P}: \ Punto de intersección rayo-superficie
+\item \textbf{L}: \ Luz o iluminación
+\item \textbf{Rr}: Rayo reflejado por la superficie
+\item \textbf{Rt}: Rayo Transmitido a través de la superficie
 
+\end{description}
+
+\vspace{3mm}
 \textbf{Definición del rayo: ecuación explícita o paramétrica}\vskip
 Los parámetros que definen el rayo (recta) son los siguientes: 
 $$R_0 = [X_0 , Y_0 , Z_0] \ \ punto \ de \ origen\ del \ rayo$$
@@ -521,11 +549,11 @@ Es conveniente que el vector de dirección del rayo esté normalizado, es decir,
 \textit{En ray tracing es de suma importancia conocer las distancias entre el origen del rayo (punto de visión) y los objetos con los que interseca, ya que el punto de intersección que se encuentre más cerca del origen del rayo,
 normalmente será el único visible por el observador.}
 
-
+\vspace{5mm}
 \textbf{Trazado de los rayos y cálculo de las intersecciones}\vskip
 A la hora de sintetizar la imagen de un objeto es obvio que los rayos de luz más importantes son los que proceden de las superficies de éstos. \textit{Encontrar los puntos de procedencia de los fotones en las superficies de los objetos, no es otra cosa que averiguar los puntos de intersección entre los rayos de luz (rectas) y los objetos.}
 Los métodos y algoritmos de cálculo de los puntos de intersección rayo-objeto dependen principalmente de las características geométricas de los objetos. Debido a esto, las figuras geométricas más importantes tienen su propio algoritmo de intersección. Por ejemplo, las esferas, cilindros, conos, toros, etc., disponen de un algoritmo de intersección apropiado, basado en la ecuación o ecuaciones que definen dichos objetos. Por otro lado, los trozos de superficies también poseen su algoritmo de intersección, dependiendo de cómo hayan sido matemáticamente definidos. Así, el algoritmo de intersección de un polígono difiere del utilizado con las superficies curvas, y dentro de éstas, los algoritmos de intersección varían según sea la naturaleza de dichas superficies.\vskip
-Podría suponerse que cada objeto que se diseñe necesita su propio algoritmo de intersección. Si esto fuese cierto, los sistemas gráficos generales serían inviables dada la infinidad de objetos que es posible diseñar. Afortunadamente, la utilización de esquemas de modelado como el \textbf{CSG} reducen el problema del cálculo de las intersecciones, al simple desarrollo e implantación de un conjunto limitado de algoritmos de intersección, tantos como primitivas diferentes (polígonos, supeficies, curvas, etc.) se utilicen en el modelado de los objetos.
+Podría suponerse que cada objeto que se diseñe necesita su propio algoritmo de intersección. Si esto fuese cierto, los sistemas gráficos generales serían inviables dada la infinidad de objetos que es posible diseñar. Afortunadamente, la utilización de esquemas de modelado como el \textbf{CSG} reducen el problema del cálculo de las intersecciones, al simple desarrollo e implementación de un conjunto limitado de algoritmos de intersección, tantos como primitivas diferentes (polígonos, supeficies, curvas, etc.) se utilicen en el modelado de los objetos.
 Por otra parte, los algoritmos basados en la síntesis directa (ray casting y ray tracing) utilizan un gran porcentaje de su tiempo de cálculo (entorno al 95\%) en la búsqueda de los puntos de intersección rayo-objeto. Por tal motivo, es muy importante que el grado de eficiencia de los algoritmos de intersección sea lo mayor posible. A tal efecto, en el desarrollo de dichos algoritmos se buscan técnicas que minimicen el número de operaciones aritméticas, sobre todo las más costosas, como el cálculo de raíces, divisiones o multiplicaciones, reduciendo éstas, si es posible, a sumas, restas y comparaciones.
 
 \vspace{5mm}
@@ -534,7 +562,7 @@ En ray tracing, además de los rayos primarios, en cada
 punto de intersección rayo-superficie son trazados otros dos rayos, el rayo reflejado y el rayo transmitido. El trazado de estos rayos dependerá de que el objeto intersecado sea reflectante y/o transmisor de la luz. 
 
 \begin{figure}[h]
-    \includegraphics[width=8cm]{Img/CPD/grafica10.jpg}
+    \includegraphics[width=10cm]{Img/CPD/grafica10.png}
     \centering
     \caption{\textbf{\footnotesize{ rayos reflejados y transmitidos en ray tracing  }}}
     \label{fig:grafica10}
@@ -543,7 +571,7 @@ punto de intersección rayo-superficie son trazados otros dos rayos, el rayo ref
 En la Figura \ref{fig:grafica10} puede apreciarse el trazado del rayo reflejado y transmitido, en cada punto de intersección. En la misma figura puede verse que cada rayo primario trazado lleva asociado un árbol binario (árbol de rayos) como el mostrado a continuación en la Figura \ref{fig:grafica11}
 
 \begin{figure}[h]
-    \includegraphics[width=8cm]{Img/CPD/grafica11.jpg}
+    \includegraphics[width=8cm]{Img/CPD/grafica11.png}
     \centering
     \caption{\textbf{\footnotesize{  árbol binario asociado a cada rayo primario  }}}
     \label{fig:grafica11}
@@ -551,38 +579,222 @@ En la Figura \ref{fig:grafica10} puede apreciarse el trazado del rayo reflejado 
 
 A la vista del árbol anterior es fácil comprender la naturaleza recursiva del algoritmo de ray tracing. Por la descripción gráfica que acabamos de ver del algoritmo, los pasos a dar para su desarrollo son:
 \begin{enumerate}
-    \item Como en ray casting, primero se ha de trazar el rayo primario, es decir, hay que calcular el rayo procedente del ojo que pasa a través de un píxel dado, buscando la intersección más cercana con los objetos del escenario.
-\item Una vez encontrado el punto de intersección, para averiguar el \textbf{color global} (final) del rayo primario (y del píxel), se calcula primero la contribución local en el punto de intersección. Para ello es preciso conocer, entre otros datos, qué fuentes aportan luz, y cuales no. Esto se consigue trazando \textbf{rayos de sombra} desde el punto de intersección hacia cada una de las fuentes de luz, evaluando la contribución de cada fuente en función de sus características y de los objetos interpuestos (si los hay) en la trayectoria del correspondiente rayo de sombra (Figura \ref{fig:grafica12a}).
+    \item Primero se traza el rayo primario, es decir, hay que calcular el rayo procedente del ojo que pasa a través de un píxel dado, buscando la intersección más cercana con los objetos del escenario. Este proceso es similar en Ray Casting.
+\item Una vez encontrado el punto de intersección, para averiguar el \textbf{color global} (final) del rayo primario (y del píxel), se calcula primero la contribución local en el punto de intersección. Para ello es preciso conocer, entre otros datos, qué fuentes aportan luz, y cuales no. Esto se consigue trazando \textbf{rayos de sombra} (Rs) desde el punto de intersección hacia cada una de las fuentes de luz, evaluando la contribución de cada fuente en función de sus características y de otros objetos interpuestos (si los hay) en la trayectoria del correspondiente rayo de sombra. En la Figura \ref{fig:grafica12a} se pueden apreciar dos ejemplos.
 \begin{figure}[h]
-    \includegraphics[width=8cm]{Img/CPD/grafica12a.jpg}
+    \includegraphics[width=9cm]{Img/CPD/grafica12a.png}
     \centering
     \caption{\textbf{\footnotesize{  rayos de sombra para evaluar la \textit{contribución local} en un píxel   }}}
     \label{fig:grafica12a}
 \end{figure}
-\item En el caso de que la superficie presente reflexión (que es lo más frecuente) calcularemos la trayectoria del rayo reflejado con respecto a la normal a la superficie en el punto de intersección. En el cálculo de esta trayectoria normalmente se supone que el objeto (superficie) es un \textit{reflector perfecto}
+\item Cuando la superficie presenta reflexión (que es lo más frecuente), se calcula la trayectoria del rayo reflejado con respecto al \textit{vector normal} a la superficie en el punto de intersección. En el cálculo de esta trayectoria normalmente se supone que el objeto (superficie) es un \textit{reflector perfecto}.
 
-\item De la misma forma, si el objeto es transmisor de la luz, se ha de calcular la trayectoria del rayo transmitido hacia el interior del objeto, determinando el ángulo de refracción por la ley de Snell\footnote{\url{https://es.wikipedia.org/wiki/Ley_de_Snell}}
+\item De la misma forma, si el objeto es transmisor de la luz, se calcula la trayectoria del rayo transmitido hacia el interior del objeto, determinando el ángulo de refracción por la ley de Snell\footnote{\url{https://es.wikipedia.org/wiki/Ley_de_Snell}}.
 \end{enumerate}
 
 \begin{figure}[h]
-    \includegraphics[width=8cm]{Img/CPD/grafica12.jpg}
+    \includegraphics[width=6cm]{Img/CPD/grafica12.png}
     \centering
     \caption{\textbf{\footnotesize{  trazado de los rayos reflejado y transmitido   }}}
     \label{fig:grafica12}
 \end{figure}
 
 
-Puesto que en el algoritmo de ray tracing los rayos normalmente se trazan hacia atrás, a continuación se ha de seguir la pista del rayo reflejado (o bien la del transmitido), para encontrar los respectivos puntos de procedencia
-de la luz, es decir, los puntos de intersección (más cercanos) con los objetos del escenario. Localizados éstos, de nuevo se generan rayos de sombra (para calcular la contribución local), de transmisión (para hallar la contribución
-transmitida) y de reflexión (para la contribución reflejada), todos ellos con origen en los puntos de intersección recién encontrados. Como se puede observar, algorítmicamente se vuelve a una situación similar a la del punto de
+Puesto que en el algoritmo de ray tracing los rayos normalmente se trazan hacia atrás, a continuación se sigue la pista del rayo reflejado (o bien la del transmitido), para encontrar los respectivos puntos de procedencia
+de la luz, es decir, los puntos de intersección (más cercanos) con los objetos del escenario. Localizados éstos, de nuevo se generan rayos de sombra (para calcular la contribución local), de transmisión (para hallar la contribución transmitida) y de reflexión (para la contribución reflejada), todos ellos con origen en los puntos de intersección recién encontrados. Como se puede observar, algorítmicamente se vuelve a una situación similar a la del punto de
 partida (aunque no igual), lo que se aconseja es una implantación recursiva del proceso de trazado de los rayos. 
 
 \vskip
 
-El problema principal del algoritmo trazador de rayos es su lentitud, ya que para generar una imagen puede emplear una enorme cantidad de tiempo. Básicamente, esto se debe a que para cada rayo trazado se ha de probar si interseca con cada objeto presente en el escenario. Las principales técnicas de aceleración traten de minimizar el tiempo empleado en la búsqueda de puntos de intersección, aunque este no es el único criterio de aceleración utilizado. Muchos de estos procesos dependen de la tecnología de hardware utilizada ( tarjetas de vídeo, monitores) tanto en los procesos de cálculos geométricos como los de rasterización.
+Se analiza este proceso a través del ejemplo de la Figura \ref{fig:grafica13}. Se puede ver un escenario con planos y esferas, todos con un cierto grado de transparencia y reflexión. Siendo $E$ un rayo primario que interseca con la superficie $3$, primero se calcula la luz procedente de las fuentes generando los rayos de sombra $S1$ y $S2$; como se aprecia en la figura, el rayo $S2$ está bloqueado por el esferoide $4$, que al ser opaca anula el efecto de la fuente de luz $Lb$. Además, como la superficie $3$ es conductora de la luz, se ha de trazar el rayo transmitido $T1$.\vskip
+Puesto que la superficie es al mismo tiempo reflectora, también se debe trazar el rayo reflejado $R1$. De modo similar se irían generando y evaluando el resto de los rayos, para poder determinar finalmente el color del rayo $E$. 
+
+\begin{figure}[h]
+    \includegraphics[width=12cm]{Img/CPD/grafica13.png}
+    \centering
+    \caption{\textbf{\footnotesize{   proceso de ray tracing   }}}
+    \label{fig:grafica13}
+\end{figure}
+
+La Figura \ref{fig:grafica14} muestra el árbol de rayos correspondiente al ejemplo anterior.
+La raíz del árbol representa el rayo primario procedente del ojo, y cada uno de los nodos es una intersección con un objeto. De cada nodo salen por un lado los rayos de sombra, y por otro los rayos reflejados y transmitidos, en el caso de que los objetos sean reflexores y transmisores, respectivamente.
+
+\begin{figure}[h]
+    \includegraphics[width=6cm]{Img/CPD/grafica14.png}
+    \centering
+    \caption{\textbf{\footnotesize{   árbol de rayos del ejemplo }}}
+    \label{fig:grafica14}
+\end{figure}
+
+\vspace{5mm}
+\textbf{Contribución de los diferentes rayos al color global}\vskip
+A la hora de calcular el color global se debe considerar que no todos los rayos generados influyen en la misma proporción. Por ejemplo, la luz que llega directamente de una fuente, normalmente es bastante más intensa que la que llega a través de una trayectoria de reflexión, tras efectuar varias intersecciones.\vskip
+Cuanto más abajo sea el nivel de un rayo (en el árbol de rayos), menor será su influencia a la hora de determinar el color final de un píxel.\vskip
+En el momento de trazar, una cuestión que se plantea es cuándo se ha de dar por finalizado el proceso de generación del árbol de rayos. Por lo común, a parte de las limitaciones de memoria y de potencia de cálculo que imponga el sistema donde se realice el trazado, el avance de un rayo se dará por finalizado cuando no interseque con ningún objeto (y salga del escenario), o bien cuando su contribución al color final sea nula, situación que normalmente quedará establecida por el nivel en el árbol de los rayos trazados.\vskip
+Así, todo rayo cuyo nivel dentro del árbol de rayos sea inferior a cierto nivel establecido será desestimado, ya que su contribución al color global se presupone ínfima. Por ejemplo, en el caso anterior, si se fija en $1$ la profundidad límite, el árbol de rayos resultante sería el de la Figura \ref{fig:grafica15}; en él se aprecia que sólo se consideran hasta tres intersecciones para cada rayo generado. 
+
+\begin{figure}[h]
+    \includegraphics[width=6cm]{Img/CPD/grafica15.png}
+    \centering
+    \caption{\textbf{\footnotesize{ árbol de rayos con profundidad 1  }}}
+    \label{fig:grafica15}
+\end{figure}
+
+
+La evaluación del árbol de rayos se realiza desde los nodos hoja hacia la raíz, acumulando las sucesivas aportaciones parciales, a modo de ``afluentes de luz”. Por tanto, la intensidad de un determinado nodo se calcula a partir de la intensidad de sus nodos hijos.\vskip
+El pseudocódigo de una versión pedagógica (no optimizada, ni completa) del algoritmo trazador de rayos (TR) sería: 
+
+\begin{minted}[baselinestretch=1, bgcolor=LightGray, linenos]{cpp} 
+
+ color TR(VECTOR inicio_rayo, VECTOR dir_rayo, int profundidad)
+{
+define PROFUNDIDAD_MAX 4
+define COLOR_FONDO AZUL
+VECTOR pto_interseccion, dir_reflexion, dir_transmision;
+COLOR color_local, color_reflexion, color_transmision;
+//Se verifica si el rayo ha alcanzado la profundidad máx.
+if(profundidad > PROFUNDIDAD_MAX)
+return(negro);
+else
+{ //Se busca el punto de intersección rayo-superficie
+pto_interseccion = hallar_interseccion(inicio_rayo, dir_rayo);
+//Si no hay intersección se devuelve el color de fondo
+if(pto_interseccion == 0)
+return(COLOR_FONDO)
+else
+{
+/* Se calcula la contribución local en el punto de intersección.
+
+NOTA: Los argumentos requeridos no se especifican */
+color_local = contribución_local();
+// ***Se calcula la contribución reflejada***
+/* Primero se averigua la dirección en el espacio del rayo
+reflejado. No se especifican los argumentos */
+dir_reflexion = direccion_reflexion();
+/* A continuación se llama recursivamente al proceso TR, para
+calcular la contribución del rayo reflejado */
+color_reflexion = TR(pto_interseccion, dir_reflexion, profundidad
++ 1);
+// ***Se calcula la contribución transmitida***
+/* Primero se averigua la dirección en el espacio del rayo
+transmitido. No se especifican los argumentos */
+dir_transmision = direccion_transmision();
+/* A continuación se llama recursivamente al proceso TR, para 
+calcular la contribución del rayo transmitido */
+color_transmision = TR(pto_interseccion, dir_transmision,
+profundidad + 1);
+/* Finalmente se calcula el color global, resultante de la
+suma de las tres contribuciones anteriores. A cada contribución se 
+le asocia un peso, y así poder controlar el resultado final */
+return(combinar_colores(color_local, peso_cl, color_reflexion,
+peso_cr, color_transmision, peso_ct)); }//Final, si hay intersección
+}//Final, si no se sobrepasa la profundidad máxima.
+}//Final del proceso TR. 
+
+\end{minted}
+
+\subsubsection{Aliasing y antialiasing }
+Al traspasar a un espacio discreto (discretizar) un modelo definido en un espacio continuo n-dimensional, inevitablemente \textit{se pierde} información sobre el modelo, debido a la diferencia de puntos utilizados en la definición de los modelos en ambos espacios. Cuanta más información visual del modelo se pueda transferir hacia el espacio discreto, mayor será la calidad de la imagen obtenida. \vskip
+Por otro lado, cuando se discretiza el movimiento continuo de los objetos, también se produce pérdida de información, ya que no es posible registrar todas las ``instantáneas” (frames) que constituyen el movimiento continuo.\vskip
+A la pérdida de información espacial se conoce como \textbf{aliasing espacial}, y a las discontinuidades del movimiento (pérdida de información) que pueden aparecer en las animaciones de los objetos, se asocian (o se deben) al
+\textbf{aliasing temporal}. 
+
+\begin{enumerate}
+    \item \textbf{Aliasing espacial} \vskip
+    Cuando se traza un rayo primario a través de un píxel hacia el escenario, se obtiene una muestra en inglés \textit{sample} del modelo, si es que el rayo interseca con éste. Entonces, si se pinta el píxel con el color de la muestra, se asigna las características de la muestra a un trozo de superficie del modelo, cuya área será igual a la proyección en paralelo del píxel sobre la superficie del modelo. Ver Figura \ref{fig:grafica16}
+    
+    \begin{figure}[h]
+    \includegraphics[width=9cm]{Img/CPD/grafica16.png}
+    \centering
+    \caption{\textbf{\footnotesize{  muestra del modelo  }}}
+    \label{fig:grafica16}
+    \end{figure}
+    
+    Sin embargo, como ocurre en el ejemplo, la superficie del modelo correspondiente a la proyección del píxel \textit{puede tener otros puntos con características diferentes al de la muestra}, por lo que se estaría produciendo una pérdida de información (aliasing) en la imagen sintetizada. \vskip
+    
+    \vspace{5mm}
+    \textbf{Efectos más comunes del aliasing}\vskip
+    A continuación se ven, a modo de resumen, algunas de las principales consecuencias sobre la calidad de las imágenes, que se producen a causa de la pérdida de información. 
+    
+    \begin{itemize}
+        \item La Figura \ref{fig:grafica17} muestra la manifestación más usual del aliasing, que consiste en que las líneas curvas (y los perfiles en general) se transforman en curvas dentadas debido a la geometría rectangular de los píxeles. Este efecto es menor cuanto mayor sea la resolución del dispositivo gráfico. También se aprecia menos cuando la iluminación del fondo y de la imagen es la misma, pero el color es diferente, dado que entonces el ojo es más sensible a la diferencia de luminosidad, que a la diferencia de color. El dentado depende también del grado de orientación de la curva. Como se ve en esta figura, el dentado es mucho mayor que el arriba al tratarse de una curva más plana.  
+        \begin{figure}[h]
+        \includegraphics[width=8cm]{Img/CPD/grafica17.png}
+        \centering
+        \caption{\textbf{\footnotesize{ Aliasing sobre curvas y perfiles. El aliasing de las curvas también depende de su orientación  }}}
+        \label{fig:grafica17}
+        \end{figure}
+    
+        \item Otro de los efectos del aliasing consiste en la no apreciación de objetos
+        cuya superficie sea menor que un píxel; también puede darse el caso de la existencia de objetos mayores que un píxel, pero estrechos, de modo que su aparición en la imagen dependerá de su ubicación con respecto a los puntos de muestreo.
+
+        \begin{figure}[h]
+        \includegraphics[width=6cm]{Img/CPD/grafica18.png}
+        \centering
+        \caption{\textbf{\footnotesize{ información no accesible al muestreo   }}}
+        \label{fig:grafica18}
+        \end{figure}
+        
+        En la Figura \ref{fig:grafica18} se puede ver que dos objetos iguales A y B correrán distinta suerte durante el trazado, puesto que el objeto A tendrá representación en la imagen, ya que coincide con uno de los puntos de muestreo, mientras que el objeto B no aparecerá en la imagen, al no ser muestreado.\vskip
+        Algo similar sucede con los objetos C y D pues, aunque su tamaño sea mayor que un píxel, ninguna de las muestras alcanza al objeto D, por lo que no será detectado, al contrario del C, que sí figurará en la imagen trazada, aunque con una calidad dudosa, como se ve a continuación. 
+        
+        \item Otro efecto común del aliasing es el de la``rotura" de los objetos, que depende de su orientación respecto a la matriz de muestreo (plano visual), es decir, dependiendo del número de puntos de muestreo que inciden sobre un objeto, un factor que varía según sea la posición del objeto, con respecto a la matriz de píxeles. 
+        
+        \begin{figure}[h]
+        \includegraphics[width=8cm]{Img/CPD/grafica19.png}
+        \centering
+        \caption{\textbf{\footnotesize{rotura de los objetos }}}
+        \label{fig:grafica19}
+        \end{figure}
+        
+        En esta Figura  \ref{fig:grafica19}, A y B son de nuevo un ejemplo de objetos cuya aparición en la imagen dependerá de su posición en el plano visual. Por otra parte, el objeto C queda suficientemente representado pues coincide con suficientes puntos de muestreo, mientras que el objeto D quedaría \textit{roto} a causa de que los puntos de muestreo que coinciden con él están en dos columnas diferentes de la matriz de muestreo, por lo que quedará representado por píxeles que están en diferentes columnas, con lo cual el objeto parecerá roto o fragmentado. Como se puede apreciar, este problema está muy relacionado con los anteriores. 
+    \end{itemize}
+    
+    \item \textbf{Antialiasing espacial } \vskip
+    Aunque el aliasing no se puede evitar completamente, sin embargo es posible reducir sus efectos visuales hasta lograr calidad fotorrealista si\vskip
+    \begin{description}
+    \item \textbf{a)} Se considera a la superficie de los píxeles como trozos de espacio continuo, y no como puntos discretos.
+    \item \textbf{b)} Si en vez de trazar una sola muestra por píxel, se toman varias, es decir, se trazan varios rayos por píxel.
+    \end{description}
+     \vskip
+    
+    
+    En ray tracing, las técnicas principales que disminuyen el aliasing son: 
+    \begin{itemize}
+        \item \textbf{Sobremuestreo} (\textit{supersampling}) \vskip
+        Si en vez de trazar una sola muestra por píxel, se toman varias, es decir, se trazan varios rayos por píxel.\vskip
+        El mayor problema que presenta esta técnica es que el número de
+        cálculos necesarios para obtener una imagen se multiplicaría por n, siendo n el total de rayos trazados por cada píxel, aunque el proceso puede optimizarse haciendo que los píxeles contiguos compartan una misma muestra. Por ejemplo, en la Figura \ref{fig:grafica20} se puede ver cómo trazando sólo 25 rayos es posible muestrear una matriz de 16 píxeles, trazando 4 rayos por cada píxel, por lo que en teoría deberían ser 64 los rayos trazados. 
+        
+         \begin{figure}[h]
+        \includegraphics[width=6cm]{Img/CPD/grafica20.png}
+        \centering
+        \caption{\textbf{\footnotesize{ sobremuestreo optimizado  }}}
+        \label{fig:grafica20}
+        \end{figure}
+        
+    \item \textbf{Sobremuestreo adaptativo} (\textit{adaptative supersampling})\vskip
+    Como en el caso anterior, esta técnica traza múltiples rayos por cada píxel, aunque en esta ocasión quedarán distribuidos de modo irregular, basándose en el principio de \textit{trazar más rayos donde más se necesiten}.\vskip
+    En efecto, no siempre es necesario lanzar un número constante de rayos para conseguir paliar los efectos del aliasing; los objetos del escenario suelen tener superficies homogéneas donde no es necesario trazar rayos extra, mientras que en otros lugares se hace preciso tomar un mayor número de muestras.\vskip
+    En el \textit{sobremuestreo adaptativo} primero se traza un número establecido de rayos. Seguidamente se analiza en qué zonas es necesario trazar más rayos (aquellas, p. ej., donde el color de las muestras difiera). Una vez determinadas las zonas heterogéneas, se procede a lanzar más rayos allí donde sean necesarios.\vskip
+    En realidad el \textit{sobremuestreo} y el \textit{sobremuestreo adaptativo}, por lo común se utilizan conjuntamente, por lo que se trata de un planteamiento híbrido. Así, en el ejemplo de la Figura 21, si al efectuar el sobremuestreo de de 4 rayos en un píxel dado resulta que el color de cada uno de los rayos es diferente, entonces se ha de subdividir la superficie del píxel en 4 trozos, y a continuación se ha de volver a realizar el sobremuestreo en cada subdivisión. También habría que efectuar esta operación en el caso de que los sondeos (muestras) fuesen incapaces de detectar objetos de menor tamaño que la superficie del píxel (o del subpíxel). En definitiva, el proceso de subdivisión debería continuarse hasta que no se produjese ninguna de las situaciones anteriores. 
+    \end{itemize}
+    
+    \item \textbf{Sobremuestreo estocástico}\vskip
+    Los métodos anteriores se basaban en dividir el píxel tratado en varias partes, y en cada una de ellas trazar un rayo. Sin embargo, en muchas ocasiones hay zonas tan finas que no son captadas por las sucesivas subdivisiones del píxel, ya que siempre (y en todos los píxeles) se utiliza la misma trama de división. Con el \textit{sobremuestreo estocástico} también se lanzan múltiples rayos, aunque en esta ocasión son trazados aleatoriamente de forma que se cubra todo el píxel, pero no siempre con la misma trama.\vskip
+    Con esta técnica, además de minimizar los problemas de los planteamientos anteriores, se pueden conseguir efectos ópticos, como la profundidad de campo y penumbras. Sin embargo se plantea el problema del \textit{ruido}. Así, puede ocurrir que un píxel no tome su color correcto debido a la naturaleza aleatoria del proceso. De todos modos, por ser aleatorio, el ruido pasa más desapercibido al ojo humano que los problemas que plantean con otras técnicas, por lo que el sobremuestreo estocástico es una buena solución contra el aliasing, obteniéndose buenos resultados 
+    
+    \item \textbf{Sobremuestreo estadístico}\vskip
+    En el \textit{sobremuestreo estadístico} se intenta determinar el número de rayos necesarios, a partir de estimaciones obtenidas de muestras trazadas previamente. Por ejemplo, después de trazar cuatro rayos distribuidos regularmente en un píxel, los colores de las cuatro muestras han de pasar unos tests estadísticos que calculan en qué medida la estimación del color real del píxel es aceptable. Si la estimación es buena, se deja ese color; de lo contrario, se deberán lanzar más rayos, y volver a ejecutar las pruebas.\vskip
+    Los parámetros de referencia que utilizan los tests estadísticos para saber si una estimación es buena o no, pueden ser modificados convenientemente, según interese una imagen de alta calidad o una imagen de menor calidad, pero obtenida con mayor rapidez. 
+    
+\end{enumerate}
+
+
+El problema principal del algoritmo trazador de rayos es su velocidad, ya que para generar una imagen puede emplear una enorme cantidad de tiempo. Básicamente, esto se debe a que para cada rayo trazado se ha de probar si interseca con cada objeto presente en el escenario. Las principales técnicas de aceleración intentan minimizar el tiempo empleado en la búsqueda de puntos de intersección, aunque este no es el único criterio de aceleración utilizado. Muchos de estos procesos dependen de la tecnología de hardware utilizada (tarjetas de vídeo, monitores) tanto en los procesos de cálculos geométricos como los de rasterización.
  
 
-Con lo visto en esta sección sobre la Síntesis de Imágenes, es suficiente para tener una idea global sobre este campo de la IG. Si bien en la actualidad se utilizan implementaciones de Radiocity y algoritmos de Pathtracing\footnote{\url{http://madebyevan.com/webgl-path-tracing/}} para generar resultados fotorrealistas\footnote{El fotorrealismo es la cualidad de una imagen generada por computadora que trata de imitar las imágenes generadas por cámaras fotográficas}, en el contexto de este trabajo de investigación se hace incapié en la visualización utilizando \textit{Ray Tracing} ya que los objetivos de calidad de imágenes para el prototipo COCADA son suficientes con este método. Pasamos a continuación a ver una panorámica general del otro campo que se analiza a lo largo de este trabajo: el \textit{Modelado Geométrico de sólidos}.
+Con lo visto en esta sección sobre la Síntesis de Imágenes, es suficiente para tener una idea global sobre este campo de la IG. Si bien en la actualidad se utilizan implementaciones de Radiosity y algoritmos de Pathtracing\footnote{\url{http://madebyevan.com/webgl-path-tracing/}} para generar resultados fotorrealistas\footnote{El fotorrealismo es la cualidad de una imagen generada por computadora que trata de imitar las imágenes generadas por cámaras fotográficas}, en el contexto de este trabajo de investigación se hace incapié en la visualización utilizando \textit{Ray Tracing} ya que los objetivos de calidad de imágenes para el prototipo COCADA son suficientes con este método. A continuación se puede ver una panorámica general del otro campo que se analiza a lo largo de este trabajo: el \textit{Modelado Geométrico de sólidos}.
 
 
 \clearpage
@@ -2034,9 +2246,10 @@ En los nodos terminales del árbol no sólo se representan las primitivas, sino 
 \includegraphics[width=12cm]{Img/GEO/geo-booleano6.png}
 \centering
 \caption{\textbf{\footnotesize{Arbol CSG con tres operaciones booleanas: unión $\cup$, intersección $\cap$ y diferencia $-$ }}}
+\label{fig:bool}
 \end{figure}
 
-En el ejemplo de la figura 13 se puede ver la descripción de un modelo booleano, llamado R3.\vskip Partiendo de las primitivas $P_0$ (cilindro), $P_1$ (cilindro), $P_2$ (cilindro), $P_3$ (esfera) y $P_4$ (cubo) se obtiene el objeto final ($R_3$) después de tres niveles de operaciones booleanas.\vskip
+En el ejemplo de la Figura \ref{fig:bool} se puede ver la descripción de un modelo booleano, llamado R3.\vskip Partiendo de las primitivas $P_0$ (cilindro), $P_1$ (cilindro), $P_2$ (cilindro), $P_3$ (esfera) y $P_4$ (cubo) se obtiene el objeto final ($R_3$) después de tres niveles de operaciones booleanas.\vskip
 En primer lugar se efectúa la unión de $P_0$ y $P_1$, después de haber transformado y posicionado adecuadamente las primitivas en el espacio, mediante las matrices netas $T_0$ y $T_1$.
 
 \begin{equation}
@@ -2162,7 +2375,7 @@ El dominio del conjunto anterior es de 5 semiespacios diferentes (planar, cilín
 
 \textbf{Generación de ejemplares de primitivas}\vskip
 En la generación de ejemplares de primitivas, el sistema de modelado define un conjunto de formas sólidas primitivas tridimensionales que son relevantes para el área de aplicación. Estas primitivas suelen parametrizarse no sólo en función de las transformaciones, sino también con base en otras propiedades. Por ejemplo, un objeto primitivo puede ser una pirámide regular con un número (definido por el usuario) de caras que se unen en el ápice. Los ejemplares de primitivas son similares a objetos parametrizados, en este caso los objetos son sólidos.\vskip
-La generación de ejemplares de primitivas se utiliza con frecuencia en objetos de complejidad relativa, como engranajes o tuercas, que son tediosos de definir en función de combinaciones booleanas de objetos más sencillos pero que se pueden caracterizar fácilmente con unos cuantos parámetros de alto nivel. Por ejemplo, un engranaje se puede parametrizar por su diámetro, su número de dientes, etc, como se ilustra en la figura \ref{fig:csg4}.
+La generación de ejemplares de primitivas se utiliza con frecuencia en objetos de complejidad relativa, como engranajes o tuercas, que son tediosos de definir en función de combinaciones booleanas de objetos más sencillos pero que se pueden caracterizar fácilmente con unos cuantos parámetros de alto nivel. Por ejemplo, un engranaje se puede parametrizar por su diámetro, su número de dientes, etc, como se ilustra en la Figura \ref{fig:csg4}.
 
 
 \begin{figure}[h]
@@ -2177,7 +2390,7 @@ Por lo tanto, la única forma de modelar un nuevo tipo de objeto es describiendo
 
 \subsection{Visualización de modelos booleanos}
 
-Para entender mejor cómo se efectúa la visualización de los modelos booleanos podemos recurrir al ray casting (porque consideramos se puede considerar como un subconjunto de ray tracing), recordemos brevemente cuál es la información disponible para decidir qué superficies son visibles y cuales no.
+Para entender mejor cómo se efectúa la visualización de los modelos booleanos podemos recurrir al ray casting (porque se puede considerar como un subconjunto de ray tracing), es necesario recordar cuál es la información disponible para decidir qué superficies son visibles y  cuales no.
 \begin{itemize}
     \item Por un lado, en el espacio de referencia se encuentran N sólidos (primitivas), compartiendo o no un mismo volumen de espacio.
     \item Por otro lado, se dispone de un árbol binario CSG, que proporciona una descripción precisa de cómo se combinan booleanamente dichas primitivas.
@@ -2185,7 +2398,7 @@ Para entender mejor cómo se efectúa la visualización de los modelos booleanos
 
 Como las primitivas presentes pueden ser muchas y las combinaciones entre ellas muy complejas, un planteamiento de ``divide y vencerás” parece el más apropiado para resolver el arduo problema de averiguar qué primitivas y puntos de la superficie son visibles, y cuales no.\vskip
 
-Para ello se aplica el proceso siguiente: 
+Para ello se aplica el siguiente proceso: 
 \begin{enumerate}
     \item Se inicia el recorrido del árbol binario \textit{comenzando por el nivel inferior}, localizando el primer par de nodos terminales, la primitiva y la matriz de transformación asociada a cada nodo; en el nodo padre de los nodos terminales se encuentra el operador booleano que se ha de aplicar al par de primitivas.
     \item Una vez que las primitivas localizadas están convenientemente escaladas y situadas en el sistema de referencia, \textit{se efectúa la clasificación del rayo con respecto a cada una de las dos primitivas} (clasificación de E1 en E3), o lo que es igual, se averigua qué puntos del rayo se encuentran en las fronteras de las primitivas y cuáles en su interior. Siendo $t_e$ y $t_s$ los valores que toma $t$ (en la ecuación paramétrica del rayo) \ref{eq:rayos} en los puntos de intersección de entrada y salida (fronteras), el rayo queda clasificado, con respecto a cada primitiva, en el intervalo $[t_e, t_s]$ (un intervalo por primitiva).
@@ -2194,16 +2407,16 @@ Para ello se aplica el proceso siguiente:
     
 \end{enumerate}
 
-Volviendo al punto tercero, es importante ver que si se crease un nuevo objeto operando booleanamente con las primitivas (proceso bastante costoso), y se procediese a la clasificación del rayo con el objeto resultante $(R)$, \textit{el intervalo o intervalos ${[t_e, t_s]}_R$ que se obtuviesen, serían los mismos que los obtenidos al efectuar directamente la operación ${[t_e, t_s]}_1 <op> {[t_e, t_s]}_2$. Esta propiedad es la clave que permite que la visualización de los modelos booleanos, mediante ray casting o ray tracing, sea muy sencilla.}
+Volviendo al tercer punto, es importante ver que si se crea un nuevo objeto mediante operaciones booleanas con las primitivas (proceso bastante costoso), y se procediese a la clasificación del rayo con el objeto resultante $(R)$, \textit{el intervalo o intervalos ${[t_e, t_s]}_R$ que se obtuviesen, serían los mismos que los obtenidos al efectuar directamente la operación ${[t_e, t_s]}_1 <op> {[t_e, t_s]}_2$. Esta propiedad es la clave que permite que la visualización de los modelos booleanos, mediante ray casting o ray tracing, sea muy sencilla.}
 
 
-\subsbsection{Diagramas de Roth}
-Para facilitar la comprensión del proceso de clasificación de los rayos con respecto a las primitivas y modelos resultantes es de gran ayuda (al menos visualmente) la utilización de los llamados diagramas de Roth. Éstos no son otra cosa que la representación recursiva en la recta real $[−\infty, +\infty]$ de los intervalos de clasificación $[t_e, t_s]$.
+\subsubsection{Diagramas de Roth}
+Para facilitar la comprensión del proceso de clasificación de los rayos con respecto a las primitivas y modelos resultantes es de gran ayuda (al menos visualmente) la utilización de los llamados \textit{diagramas de Roth}. Éstos no son otra cosa que la representación recursiva en la recta real $[−\infty, +\infty]$ de los intervalos de clasificación $[t_e, t_s]$.
 Para ver cómo son los diagramas de Roth y entender mejor la visualización de los modelos booleanos en general, nada mejor que mostrar algunos ejemplos. Comenzaremos viendo un caso sencillo, en el que sólo intervienen dos primitivas.
-Sea $R = P_1.T_1 \cap P_2.T_2$ el objeto resultante de la intersección de dos primitivas, tal como muestra la Figura \ref{fig:visual0}
+Sea $R = P_1.T_1 \cap P_2.T_2$ el objeto $R = I \cap D$ resultante de la intersección de dos primitivas, tal como muestra la Figura \ref{fig:visual0}
 
 \begin{figure}[h]
-\includegraphics[width=8cm]{Img/GEO/visual0.jpg}
+\includegraphics[width=8cm]{Img/GEO/ray0.png}
 \centering
 \caption{\textbf{\footnotesize{modelo booleano}}}
 \label{fig:visual0}
@@ -2212,7 +2425,7 @@ Sea $R = P_1.T_1 \cap P_2.T_2$ el objeto resultante de la intersección de dos p
 A la hora de visualizar el modelo booleano, el algoritmo de ray casting se va a encontrar, en este ejemplo, con dos sólidos posicionados en el \textbf{SUR} (ver sección \ref{section:ray-concept}). Suponiendo que la dirección del rayo trazado sea la que se muestra en la Figura \ref{fig:visual1}, la clasificación del rayo, con respecto a las primitivas, queda reflejada en un diagrama de Roth como sigue:
 
 \begin{figure}[h]
-\includegraphics[width=14cm]{Img/GEO/visual1.jpg}
+\includegraphics[width=10cm]{Img/GEO/ray1.png}
 \centering
 \caption{\textbf{\footnotesize{diagrama de Roth para un modelo de dos niveles}}}
 \label{fig:visual1}
@@ -2223,7 +2436,7 @@ serán válidos $t_{e2}$ y $t_{s2}$ en la visualización del objeto resultante. 
 Ver que $[t_{e2}, t_{s2}] = [t_{e1}, t_{s1}] \cap [t_{e2}, t_{s2}]$. Por lo tanto, no ha sido preciso calcular el objeto resultante (R en la Figura \ref{fig:visual0}), para saber qué puntos serán visibles y las propiedades óptico-geométricas en dichos puntos. En el mismo modelo, si el rayo trazado fuese el que se muestra en la Figura \ref{fig:visual2}, la clasificación del rayo quedaría:
 
 \begin{figure}[h]
-\includegraphics[width=14cm]{Img/GEO/visual2.jpg}
+\includegraphics[width=10cm]{Img/GEO/ray2.png}
 \centering
 \caption{\textbf{\footnotesize{diagrama de Roth}}}
 \label{fig:visual2}
@@ -2232,8 +2445,8 @@ Ver que $[t_{e2}, t_{s2}] = [t_{e1}, t_{s1}] \cap [t_{e2}, t_{s2}]$. Por lo tant
 En este caso, al calcular la intersección entre los intervalos de clasificación del rayo, el resultado es $[t_{e1}, t_{s2}] = [t_{e1}, t_{s1}] \cap [t_{e2}, t_{s2}]$. Vemos que se produce una singularidad, la cual es fácilmente detectable dado que $t_{e1} \cong t_{s2}$, considerando el posible error de precisión. La detección de una singularidad puede considerarse como un test de validez alternativo en los operadores booleanos regularizados que, como en el ejemplo, implica que el rayo no interseca con el objeto resultante $R$.\vskip
 A continuación se ve otro ejemplo (también en 2D), en el que el árbol binario tiene más de un nivel.
 
-\begin{figure}[h]
-\includegraphics[width=16cm]{Img/GEO/visual3.jpg}
+\begin{figure}[!]
+\includegraphics[width=15cm]{Img/GEO/ray3.png}
 \centering
 \caption{\textbf{\footnotesize{diagrama de Roth para un modelo de tres niveles}}}
 \label{fig:visual3}
@@ -2783,7 +2996,7 @@ Operaciones booleanas combinadas:
 
 
 \begin{figure}[h]
-\includegraphics[width=15cm]{Img/Modelos/modelado16.jpg}
+\includegraphics[width=16cm]{Img/Modelos/modelado16a.jpg}
 \centering
 \caption{\textbf{ \footnotesize{b) Operaciones booleanas combinadas }}}
 \label{bCSG}
@@ -3020,13 +3233,13 @@ Una escena es un soporte para todos los objetos que componen un mundo en 3D, inc
 \includegraphics[width=15cm]{Img/WEB/web-three.jpg}
 \centering
 \caption{\textbf{\footnotesize{Ejemplo de aplicación con Three.js fuente: \url{http://carvisualizer.plus360degrees.com/threejs/} }}}
-\label{fig:jopen}
+\label{fig:threejs}
 \end{figure}
 
 \clearpage
-\subsection{Evaluación de las tecnologías }
+\subsection{Evaluación}
 
-A continuación en la tabla se analizan las dos tecnologías respecto a los requerimientos del prototipo COCADA.
+A continuación en la tabla se analizan las OpenJSCAD y Three.js respecto a los requerimientos del prototipo COCADA.
 
 \begin{center}
  \begin{tabular}{ c |c c } 
@@ -3053,40 +3266,378 @@ A continuación en la tabla se analizan las dos tecnologías respecto a los requ
 \caption{Tabla comparativa entre OpenJSCAD y Three.js}
 \end{center}
 
-Si bien las funcionalidades de ambas tecnologías pueden ser similar es importante aclarar el ámbito de aplicación de cada una.
+Si bien las funcionalidades de ambas tecnologías pueden ser similares, es importante aclarar el ámbito de aplicación de cada una respecto al prototipo.
 
 \begin{itemize}
-    \item OpenJSCAD es un conjunto de herramientas para resolver el modelado mediante scripting en la web, con una calidad de visualización suficiente para poder comprender la geometría de un modelo sólido.
-    \item Three.js es una librería que a pesar de poder realizar las mismas tareas mediante complementos o plugins\footnote{Los complementos o plugins son herramientas que extienden la funcionalidad de un software}, normalmente se usa para crear complejas animaciones en 3D. Se puede utilizar para programar videojuegos, aplicaciones interactivas, obras de arte digital, instalaciones para productos, etc. Aprovechando las posibilidades como la iluminación, las simulaciones físicas, el uso de cámaras, las partículas, la interacción con dispositivos, el trabajo con audio.
+    \item OpenJSCAD es un conjunto de herramientas que permiten resolver el modelado mediante scripting en la web, con una calidad de visualización suficiente para poder comprender la geometría de un modelo sólido.
+    \item Three.js es una librería que puede realizar modelado booleano mediante complementos o plugins\footnote{Los complementos o plugins son herramientas que extienden la funcionalidad de un software}, sin embargo se utiliza normalmente para crear complejas visualizaciones y animaciones en 3D. Es una herramienta conocida videojuegos, aplicaciones interactivas, obras de arte digital, instalaciones para productos, etc. Explotando las posibilidades como la iluminación, las simulaciones físicas, el uso de cámaras, las partículas, la interacción con dispositivos y el trabajo con audio.
 \end{itemize}
 
- En definitivas, los ámbitos de aplicación son diferentes, con OpenJSCAD se obtienen herramientas de forma casi directa para resolver los problemas de la investigación, mientras que con Three.js se debe adaptar su lógica de funcionamiento a un ámbito mucho más acotado en términos de funcionalidad y visualización. Por todo lo mencionado se considera que OpenJSCAD es una herramienta indicada para ser incorporada en el prototipo COCADA.
+ En definitivas, los ámbitos de aplicación de estas dos tecnologías son diferentes. Con OpenJSCAD se obtienen herramientas de forma casi directa para resolver los requerimientos del prototipo, mientras que con Three.js se debe adaptar su lógica de funcionamiento a un ámbito mucho más acotado en términos de funcionalidad y visualización. Por todo lo mencionado se considera que OpenJSCAD es la opción indicada para ser utilizada en el desarrollo del prototipo COCADA.
+
+\section{Intercambio de datos entre sistemas CAD}
+En los ámbitos donde se trabaja con CAD/CAM, se utilizan muchos sistemas distintos para administrar los datos técnicos de los productos. Cada sistema tiene sus propios formatos de datos, por lo que la misma información debe ingresarse varias veces en múltiples sistemas, y esto deriva en redundancia y errores. El problema no es exclusivo de la fabricación digital, sino que es más delicado porque los datos de diseño pueden ser complejos y el uso del 3D conduce a un posible aumento de errores, falta de información o falta de entendimiento entre los operadores de los sistemas. \citep{Randjelovic2007} \vskip
+El Instituto Nacional de Estándares de EE.UU \footnote{\url{https://www.nist.gov/}} estima que la incompatibilidad de datos se traduce en costos que alcanzan los 90 millones de dólares por año, ese es un problema muy significativo, sobre todo para la industria de la manufactura. \citep{Tassey1999} \vskip
+
+El intercambio de datos entre sistemas CAD, en inglés \textit{CAD Data Exchange} es un problema central en el contexto actual del modelado geométrico. Es fundamental su utilización debido a que es la principal manera de lograr interoperabilidad entre plataformas. El CAD Data Exchange es de suma importancia porque describe cómo las representaciones pueden ser bien definidas y pone de manifiesto porqué la conversión de la representaciones pueden convertirse en un problema.\vskip
+El enfoque establecido para el intercambio de datos, tanto en la teoría como en la práctica se denomina \textit{Data Exchange de la geometría} o \textit{DE geométrico}, en este enfoque la representación del objeto se transfiere de un sistema fuente a un sistema de destino. \citep{SpitzRappoportA.b2004}
+La forma tradicional de hacer esto es a través de los denominados \textit{formatos neutrales de intercambio} como STEP\footnote{\url{https://www.steptools.com/stds/step/}}o IGES\footnote{\url{https://wiki.eclipse.org/IGES_file_Specification}}.
+\vskip 
+\subsection{CAD Data Exchange basado en características}
+El DE geométrico es bastante confiable, aunque en muchos casos se pueden obtener resultados de modelos sólidos con problemas de inconsistencia produciendo objetos no-sólidos como se analiza en la sección \ref{sectionproblema}. Sin embargo, su principal inconveniente es el hecho de que no es compatible con el paradigma de diseño más común de la actualidad, el \textit{diseño basado en características}, y por lo tanto es deficiente para el soporte de los procesos colaborativos. La incompatibilidad se debe en gran medida a la imposibilidad de realizar modificaciones de los modelos geométricos en el lado del sistema destino. Esta situación se puede ver en el ejemplo de la Figura \ref{fig:de0} \vskip
+
+\begin{figure}[h]
+\includegraphics[width=14cm]{Img/WEB/de0.png}
+\centering
+\caption{\textbf{\footnotesize{Esquema de Data Exchange Geométrico con un archivo STEP a modo de ejemplo.}}}
+\label{fig:de0}
+\end{figure}
+
+La mayoría de los sistemas CAD actuales soportan el paradigma de diseño basado en características, en inglés \textit{Feature Based} (FB), también llamado \textit{diseño paramétrico} y diseño basado en la historia como se explica en la sección \ref{cadparam}. Por lo tanto, es fundamental la incorporación del concepto de intercambio de datos basado en características, en inglés \textit{Feature Based Data Exchange} (FBDE) con el fin de dar soporte a los procesos de diseño colaborativos.\vskip
+\textit{En el FBDE, dado un gráfico, basado en el historial paramétrico de un modelo (características) en un sistema origen, el objetivo es construir un gráfico en un sistema destino con una geometría similar, conservando al mismo tiempo la mayor información paramétrica posible}  \citep{SpitzRappoportA.b2004}. El FBDE conserva la inteligencia del diseño, permite que se realicen modificaciones en el lado del sistema destino como se puede observar en la Figura \ref{fig:de1} y ayuda a evitar el problema de las inconsistencias geométricas.\vskip
+
+\begin{figure}[h]
+\includegraphics[width=16cm]{Img/WEB/de1.png}
+\centering
+\caption{\textbf{\footnotesize{Esquema de Data Exchange basado en características (FBDE).}}}
+\label{fig:de1}
+\end{figure}
+
+En el paradigma de diseño basado en características, el modelo se representa como un árbol o lista de operaciones llamadas entidades, este árbol también se suele denominar ``árbol de historia". Las operaciones crean una nueva geometría o modifican la geometría existente. El punto principal de este paradigma es que las operaciones son de naturaleza paramétrica. En las Figuras \ref{fig:de2} y \ref{fig:de3} se puede ver un ejemplo práctico que ilustra el arbol de historia con las diferentes versiones de los modelos, desde el modelo original hasta el modelo objetivo. \vskip
+
+\begin{figure}[h]
+\includegraphics[width=14cm]{Img/WEB/de2.png}
+\centering
+\caption{\textbf{\footnotesize{Ejemplo de modificación de geometría}}}
+\label{fig:de2}
+\end{figure}
+
+\begin{figure}[h]
+\includegraphics[width=12cm]{Img/WEB/de3.png}
+\centering
+\caption{\textbf{\footnotesize{Ejemplo de arbol de historia con las versiones de modelos y sus respectivos valores de los parámetros}}}
+\label{fig:de3}
+\end{figure}
+
+El objetivo de FBDE es crear un modelo objetivo, empleando características en lo posible lo más similares al modelo original, es decir manteniendo la geometría. Es importante aclarar esto, porque en muchos casos, la geometría no puede ser idéntica debido a diferentes políticas de tolerancia entre los sistemas. Siempre que la aproximación esté controlada, este hecho es totalmente aceptable en la práctica.
+
+\clearpage
+\subsection{PDM Schema}
+La Gestión de Datos del Producto , en inglés \textit{Product Data Management} (PDM) es una herramienta de productividad capaz de ayudar a un grupo de trabajo, departamento, división, o empresa en la gestión de datos del producto y del proceso de desarrollo a lo largo del ciclo de vida del producto, con el objetivo de mejorar considerablemente el flujo, calidad y uso de la información, facilitando así el control de datos, actividades, cambios y configuración del producto de ingeniería. \citep{Ruiz}\vskip
+Por definición, un sistema PDM es ``algo" que maneja datos sobre productos. En el núcleo central de la información del PDM está la identificación del producto. Un producto es representado conceptualmente como un elemento o ítem dentro de la generalidad de un sistema PDM. \citep{Ungerer2002} \vskip
+
+Un Esquema de PDM, en inglés \textit{PDM Schema} es una estructura o modelo de información de referencia para el intercambio o Data Exchange de un subconjunto común de datos que se gestionan dentro de un sistema PDM. En el PDM Schema, el concepto general del producto se puede interpretar como uno o varios documentos. De esta forma, los documentos se pueden gestionar de forma coherente.\vskip
+
+Los requisitos de gestión de datos del producto abordados por el PDM Schema se organizan en agrupaciones de conceptos relacionados. Estos grupos proporcionan una agrupación lógica de entidades o elementos con el propósito de una estructura clara.\vskip
+La forma de agrupar elementos no es la misma en todos los sistemas. La agrupación depende de la dirección que tome el sistema general PDM, sus protocolos de aplicación, su alcance, etc. Por ejemplo: Para el PDM Schema establecido para promover la interoperabilidad entre sistemas que utilizan STEP, se recomienda una estructura modular, en sintonía con la dirección actual hacia la modularización de los contenidos técnicos de los recursos integrados STEP y sus protocolos de aplicación.
+
+Las unidades modulares de funcionalidad para el PDM Schema del ejemplo se enumeran a continuación:
+
+\begin{itemize}
+    \item Identificación de la pieza
+    \item Clasificación de la pieza
+    \item Propiedades de la pieza
+    \item Estructura de la pieza y relaciones
+    \item Identificación del documento
+    \item Clasificación del documento
+    \item Archivos externos
+    \item Relaciones entre documentos y archivos constitutivos
+    \item Propiedades del documento y archivos
+    \item Asociación de documentos y archivos a los datos del producto
+    \item Relaciones entre documentos y archivos
+    \item Identificación de alias
+    \item Autorización
+    \item Información de configuración y efectividad
+    \item Datos de gestión del trabajo
+\end{itemize}
+
+A continuación se especifica un fragmento de un archivo de intercambio de datos en formato STEP para una pieza mecánica, con su contexto y tipo de clasificación. En el código se puede apreciar la estructura y modularización del PDM Schema.
+\begin{minted}[baselinestretch=1, bgcolor=LightGray]{HTML}
+
+ISO-10303-21; 
+HEADER; 
+FILE_DESCRIPTION(('test', 'file'), '2;1');
+FILE_NAME('pid2_p21a.stp', '1999-05-03T21:03:29+00:00', ('N.N.'),
+(''), '', '', ''); 
+FILE_SCHEMA(('PDM_SCHEMA {1.2})); 
+ENDSEC; 
+DATA;
+/* Pieza #1 */ 
+#10 = PRODUCT('K01-42051', 'Bicicleta Bell RX 3', $, (#20));
+
+/* Contexto de la Pieza */ 
+#20 = PRODUCT_CONTEXT('', #30, ''); 
+#30 = APPLICATION_CONTEXT(''); 
+#40 = APPLICATION_PROTOCOL_DEFINITION('version 1.2', 'pdm_schema',
+2000, #30);
+
+/* Versiones para la Pieza #1 */ 
+#50 = PRODUCT_DEFINITION_FORMATION('02', 'Palanca modificada',
+#10); #60 = PRODUCT_DEFINITION_FORMATION('03', '
+Carcasa superior modificada', #10); 
+#70 = PRODUCT_DEFINITION_FORMATION_RELATIONSHIP('', 'sequence', $,
+#50, #60);
+
+/* Definicion de la vista versión 03 de la Pieza #1 */ 
+/* primary life_cycle_stage = diseño, 
+primary application_domain = diseño mecánico */ 
+
+#80 = PRODUCT_DEFINITION('/NULL', $, #60, #90); #90 =
+PRODUCT_DEFINITION_CONTEXT('part definition', #100, 'design');
+#100 = APPLICATION_CONTEXT('diseño mecánico');
+
+/* Asociación del usuario id a la Pieza #1 */ #130 =
+APPLIED_ORGANIZATION_ASSIGNMENT(#140, #150, (#10, #160, #170));
+#150 = ORGANIZATION_ROLE('id owner');
+
+/* Informacion de la persona y la organizacion */ 
+#140 = ORGANIZATION('ABC27166', 'Misiones Argentina', 'location');
+#540 = PERSON('nombre@email.com', 'Pedro', 'Perez', $, $, $);
+#550 = PERSON_AND_ORGANIZATION(#540, #140);
+
+/* Pieza #2 y Pieza #3 */ 
+#160 = PRODUCT('H24-1123.1', 'Fixture RX25B', '', (#20)); 
+#170 = PRODUCT('DIN 932', 'Screw M3x15', '', (#20));
+
+/* Versiones para Pieza #2 y Pieza #3 */ 
+#180 = PRODUCT_DEFINITION_FORMATION('B', 'agujeros para tornillos
+más grandes', #160); 
+#190 = PRODUCT_DEFINITION_FORMATION('15', '', #170);
+
+/* Definición de las vistas para versión de Pieza #2 */ 
+#200 = PRODUCT_DEFINITION('/NULL', $, #180, #210); 
+#210 = PRODUCT_DEFINITION_CONTEXT('part definition',
+#215, 'diseño'); #215 = APPLICATION_CONTEXT('diseño mecánico');
+
+/* Definición de las vistas para versión de Pieza #3 */ 
+#220 = PRODUCT_DEFINITION('/NULL', $, #190, #230); 
+#230 = PRODUCT_DEFINITION_CONTEXT('part definition', #240, 'diseño'); 
+#240 = APPLICATION_CONTEXT('diseño mecánico');
+...
+ENDSEC; END-ISO-10303-21;
+\end{minted}
 
 
 
+\subsection{Data Exchange en entornos web}
+
+En la actualidad los sistemas PDM están aprovechando las posibilidades que ofrece internet. Este nuevo enfoque permite el trabajo entre personas establecidas en distintos puntos geográficos, gracias a la posibilidad de acceso remoto a las bases de datos. 
+Con estos nuevos sistemas es posible la utilización del PDM por parte de múltiples especialistas implicados en el desarrollo de un producto, permitiendo que esta tecnología sea una plataforma de integración entre los interesados y una excelente ayuda para la puesta en marcha y tareas de soporte.
+
+XML fué por mucho tiempo el formato estándar de facto para el intercambio de datos en el contexto de las aplicaciones de servicios web, en inglés \textit{web services}. Sin embargo, en comparación con XML, JSON es un formato de intercambio de datos mucho más ligero. Esta distinción es importante, ya que la eficiencia en la asignación de datos entre diferentes modelos de datos es el punto clave para mejorar el rendimiento de las aplicaciones basadas en web services. \citep{Zunke2014}
+
+A continuación se explica brevemente los dos formatos más utilizados para Data Exchange en contextos web, el tradicionalmente utilizado (XML) y (JSON) comparativamente nuevo, sus objetivos de diseño y sus características fundamentales.
+
+\subsubsection{XML}
+
+XML\footnote{\url{https://www.w3.org/XML/}} o Extensible Markup Language es un conjunto de estándares publicados por XML Working Group en el Consorcio World Wide Web  (W3C), el grupo que regula los estándares de Internet (www). Básicamente, un documento XML se compone de algunas etiquetas, en inglés \textit{tags} bien definidas y los datos incluidos en ellas. Las etiquetas son contenedores que describen los datos adjuntos y también los organizan. Los objetivos de diseño para XML v1.1 publicados en la recomendación W3C son los siguientes:
+
+\begin{itemize}
+    \item XML se podrá usar directamente en Internet.
+    \item XML debe admitir una amplia variedad de aplicaciones.
+    \item XML debe ser compatible con SGML.
+    \item Será fácil escribir programas que procesen documentos XML.
+    \item El número de características opcionales en XML debe mantenerse en el mínimo absoluto, idealmente cero.
+    \item Los documentos XML deben ser legibles por los humanos y razonablemente claros.
+    \item El diseño de XML debe prepararse rápidamente.
+    \item El diseño de XML debe ser formal y conciso.
+    \item Los documentos XML deben ser fáciles de crear.
+    \item La rigidez en el marcado XML es de mínima importancia.
+\end{itemize}
+
+La especificación de sintaxis y las regulaciones con respecto a la correcta forma de un documento XML se pueden consultar en la especificación W3C para XML v1.1
+
+\begin{minted}[baselinestretch=1, bgcolor=LightGray]{HTML}
+<?xml version="1.1"?> 
+    <greeting>Hola Mundo!</greeting> 
+<!--Esto es un comentario -->
+\end{minted}
+\begin{center}
+    \caption{Ejemplo de un documento XML}    
+\end{center}
 
 
 
-\subsection{Data Exchange}
+\subsubsection{JSON}
+JSON o Javascript Object Notation es un formato de datos basado en texto ligero y diseñado para que los datos sean legibles por humanos, el formato ha sido popularizado por Douglas Crockford.  Aunque es muy parecido a la sintaxis de objeto literal de JavaScript, puede ser utilizado independientemente de JavaScript.
 
-DESARROLLLAR JSON COMO DATA EXCHANGE FORMAT
+JSON está constituído por dos estructuras:
+
+\begin{itemize}
+    \item Una colección de pares de nombre/valor. En varios lenguajes esto es conocido como un objeto, registro, estructura, diccionario, tabla hash, lista de claves o un arreglo asociativo.
+    \item Una lista ordenada de valores. En la mayoría de los lenguajes, esto se implementa como arreglos, vectores, listas o sequencias.
+\end{itemize}
+
+Estas son estructuras universales; virtualmente todos los lenguajes de programación las soportan de una forma u otra. Por ende, es razonable que un formato de intercambio de datos que es independiente de los lenguajes de programación se base en estas estructuras.
+
+\begin{minted}[baselinestretch=1, bgcolor=LightGray]{HTML}
+{ "greeting": "Hola Mundo!" } 
+\end{minted}
+\begin{center}
+\caption{Ejemplo de objeto JSON}
+\end{center}
+
+\subsubsection{Comparación de características}
+En esta sección se analizan las características más destacadas de ambos formatos.
+
+\begin{enumerate}
+    \item \textbf{Adopción en la Industria}
+    \begin{itemize}
+        \item XML ha sido el estándar de la industria por mas de una década y tiene muchos apoyo gracias a los estándares.
+        \item JSON, por otro lado, si bien es ampliamente utilizado, no tiene estándares como Schematrons, XSD.
+    \end{itemize}
+    
+    \item \textbf{Metadatos}
+    \begin{itemize}
+        \item XML tiene una gran sobrecarga en forma de metadatos por el uso de etiquetas \textless \textgreater.
+        \item JSON tiene metadatos mínimos que lo hacen muy compacto.
+    \end{itemize}
+    
+    \item \textbf{Soporte de framework}
+    \begin{itemize}
+        \item XML es compatible con la mayoría de las implementaciones de framework (API) en toda la industria.
+        \item Al principio JSON no tenía mucho soporte, sin embargo pero se ha posicionado muy rápido en términos de adopción.
+    \end{itemize}
+    
+    \item \textbf{Extensibilidad}
+    \begin{itemize}
+        \item XML permite almacenar cualquier tipo de datos. Los atributos del elemento de datos permiten flexibilidad adicional.
+        \item JSON está limitado solo al almacenamiento de datos clásicos como texto y números.
+    \end{itemize}
+    
+    \item \textbf{Facilidad de mapeo}
+    \begin{itemize}
+        \item XML está orientado a documentos (estructura de árbol), lo que dificulta su asignación a objetos en el paradigma de programación orientado a objetos (OOP).
+        \item JSON está orientado a datos, por lo tanto, está más cerca de la estructura de los objetos en el paradigma de OOP.
+    \end{itemize}
+    
+    \item \textbf{Rendimiento}
+    \begin{itemize}
+        \item Debido a la sobrecarga de metadatos, los datos requiere, de más ancho de banda si se expresan en XML.
+        \item Los datos en JSON son muy compactos, utilizando la menor cantidad de ancho de banda.
+    \end{itemize}
+    
+\end{enumerate}
+
+
+\subsubsection{Análisis de rendimiento (Benchmark)}
+Para el análisis y la comparación del rendimiento, ambos formatos de datos (XML y JSON) se comparan respecto al uso de memoria y los tiempos de ejecución en los siguientes experimentos realizados por el \textit{Vishwakarma Institute of Information Technology} de la universidad de Pune en la India.
+\begin{enumerate}
+    \item Serialización o marshaling desde un objeto Java a una secuencia de memoria almacenada (buffer) sin compresión.
+    \item Serialización o marshaling desde un objeto Java a una secuencia de memoria almacenada (buffer) con compresión.
+    \item Des-serialización o unmarshaling de una secuencia de memoria almacenada (buffer) a un objeto Java.
+\end{enumerate}
+
+Las pruebas de rendimiento se realizaron ejecutando 100 muestras para cada experimento y 100 instancias de cada experimento. A continuacion se pueden ver muestras generadas de archivos XML y JSON respectivamente.
+
+\begin{minted}[baselinestretch=1, bgcolor=LightGray]{HTML}
+<?xml version="1.0" encoding="UTF-8" ?> 
+<Hotel xmlns="http://www.example.org/Hotel">
+    <hotelID>15013</hotelID>
+    <hotelName>rhhjwhuqabhpitcewkrc</hotelName> 
+    <menu> 
+        <food> 
+            <name>wdppncqtkhubtvkagpvm</name> 
+            <price>48161</price> 
+            <calories>49311</calories>
+        </food>
+    </menu>
+</Hotel>
+\end{minted}
+\begin{center}
+\caption{Archivo XML de muestra generado aleatoriamente}
+\end{center}
+
+\begin{minted}[baselinestretch=1, bgcolor=LightGray]{HTML}
+{"hotelID":80814, "hotelName":"glovcnbwaviboawddgvx", 
+"menu":
+{"food":[{"name":"fprgunyzwvjkruwalbny",
+"price":63463,"calories":95471}]}}
+\end{minted}
+\begin{center}
+\caption{Archivo JSON de muestra generado aleatoriamente}
+\end{center}
+
+
+
+En lo que respecta al rendimiento, el formato de intercambio de datos JSON es el claro ganador entre los dos. Tanto en términos de uso de memoria como de tiempo de ejecución, JSON ofrece un mejor rendimiento. Incluso con la compresión habilitada, XML produjo mucho más sobrecarga en la secuencia de datos que JSON.
+
+La siguiente tabla resume las medidas concluyentes de los experimentos:
+
+\begin{center}
+ \begin{tabular}{ | c | c | c | c |} 
+   \hline
+   Aspectos de rendimiento & JSON & XML & JSON/XML  \\ 
+   \hline
+   Tamaño de Secuencia (sin comprimir) & 137B & 279B & 49\% \\
+   \hline
+   Tamaño de Secuencia (comprimido) & 133B & 219B & 61\% \\
+   \hline
+   Consumo en la Serialización & 3312B & 22128B & 15\% \\
+   \hline
+   Consumo en la Des-serialización & 5840B & 7040B & 83\% \\
+   \hline
+   Tiempo de Serialización (sin comprimir) & 11614ns & 23591ns & 49\% \\
+   \hline
+   Tiempo de Serialización (comprimido) & 9884ns & 19310ns & 51\% \\
+   \hline
+   Tiempo de Des-serialización & 13880ns & 43595ns & 32\% \\
+   \hline
+ 
+\end{tabular}
+\end{center}
+\begin{center}
+\caption{Medidas concluyentes de los experimentos}
+\end{center}
+
+XML se puede usar como data exchange si:
+\begin{itemize}
+    \item El rendimiento de la aplicación no es la principal prioridad.
+    \item Se puede permitir que el consumo de memoria de una aplicación sea grande.
+    \item Es necesario que haya un estricto cumplimiento de un protocolo estándar para la comunicación.
+    \item La optimización de los datos enviados a través de la red no es prioridad.
+\end{itemize}
+
+Por el contrario, JSON se puede utilizar como data exchange si:
+\begin{itemize}
+    \item El rendimiento de la aplicación es una consideración de diseño.
+    \item El tiempo de utilización de memoria de una aplicación debe mantenerse muy pequeño o mínimo.
+    \item Puede haber una desviación sobre el formato de comunicación entre las partes o bien las partes pueden ponerse de acuerdo para realizar los cambios en el formato cuando sea necesario.
+    \item Los datos enviados a través de la red deben optimizarse.
+\end{itemize}
+
+\subsection{JSON como FBDE}
+Anteriormente se realiza un análisis de JSON comparado con XML, es importante destacar que la popularidad de JSON se debe en gran parte a la compatibilidad nativa que tiene este formato con muchos sistemas de gestión de bases de datos (DBMS). Las bases de datos relacionales como PostgreSQL\footnote{\url{https://www.postgresql.org/}} y MySQL\footnote{\url{https://www.mysql.com/}} actualmente incluyen soporte nativo para almacenar y consultar datos JSON. Las bases de datos NoSQL\footnote{\url{https://aws.amazon.com/es/nosql/}} como MongoDB\footnote{\url{https://www.mongodb.com/}} también son compatibles con JSON, aunque MongoDB utiliza una versión ligeramente modificada de JSON. MongoDB representa documentos JSON en un formato codificado en binario llamado BSON\footnote{\url{https://www.mongodb.com/json-and-bson}}. BSON amplía el modelo de JSON para proporcionar algunos tipos de datos adicionales, el uso de campos ordenados y eficiencia para la codificación y decodificación en diferentes lenguajes.\vskip
+Si se desarrolla un software que se comunica con un navegador web o una aplicación móvil, la recomendación es usar JSON como formato de datos de intercambio. Usar un formato como XML se considera una opción desactualizada.\vskip
+JSON en la actualidad es el formato mas recomendado para enviar datos entre servidores web y navegadores. Su diseño simple y su flexibilidad hacen que sea fácil de leer y comprender, y en la mayoría de los casos, fácil de manipular para los lenguajes de programación. La falta de un esquema estricto permite la flexibilidad del formato, aunque esa flexibilidad a veces hace que sea difícil garantizar que esté leyendo y escribiendo JSON correctamente. \citep{EddieSmith2018} \vskip
+
+Para dar soporte a los procesos colaborativos, es necesario que los archivos JSON puedan incluir especificaciones de diseños basadas en características. Es decir, los archivos JSON deben soportar el intercambio de datos basados en características (FBDE) y contar con estructuras para especificar el ``arbol de historia" de un modelo. En el contexto de este trabajo y para el desarrollo del prototipo COCADA, se recomienda el uso de JSON como FBDE.\vskip
+Respecto a la estructura del PDM Schema a utilizar en este trabajo, es importante aclarar que se limita al ámbito de aplicación y no incorporan todos los contenidos que se utilizan en otros PDM Schema de uso general como puede ser STEP.\vskip
+El PDM Schema tentativo para COCADA incluye entre otras, las siguientes unidades modulares:
+\begin{itemize}
+    \item Identificación del diseño o proyecto
+    \item Árbol de historia
+    \item Geometría de un objeto en la historia
+    \item Usuarios
+    \item Relación de un usuario a la historia
+    \item Parámetros de un objeto en la historia
+    \item Archivos adjuntos
+    \item Relación de archivos adjuntos con proyecto.
+    \item Conversaciones de usuarios
+    \item Relación de conversaciones con la historia
+\end{itemize}
+
 
 \subsection{WEB SERVICES - REST API}
 RECOMENDACIONES
 
 \subsection{Interfaces de manipulación directa}
 
-DESARROLLAR COMO SE INTERACTUA CON LOS PARAMETROS
-
-\clearpage
-\section{Enfoque LEAN UX}
-
-\input{Chapters/2-marco-lean.tex}
 
 \clearpage
 \section{Trabajos relacionados}
 A continuación se detallan algunas herramientas existentes que poseen características similares al prototipo COCADA. 
-En la explicación de estas tecnologías se pueden apreciar algunas diferencias respecto al prototipo planteado en este trabajo, tanto en la representación de los modelos como en la gestión de la información. De todas maneras, estas herramientas son antecedentes de gran valor porque aportan ideas de gran utilidad para posibles soluciones, sobre todo en las áreas de experiencia de usuario UX y diseño UI.
+En la explicación de estas tecnologías se pueden apreciar algunas diferencias respecto al prototipo planteado en este trabajo, tanto en la representación de los modelos como en la gestión de la información. De todas maneras, estas herramientas son antecedentes de gran valor porque aportan ideas de gran utilidad para posibles soluciones, sobre todo en las áreas de experiencia de usuario UX y diseño UI\footnote{UI o interfaz de usuario es el espacio donde se producen las interacciones entre seres humanos y máquinas.}.
 
 \subsection{Customizer}
 Customizer\citep{MakerBot2018} es una aplicación web desarrollada por la empresa Makerbot\footnote{\url{https://www.makerbot.com/}} y disponible en Thingiverse\footnote{\url{https://www.thingiverse.com/}}, una plataforma para publicación de diseños  especializada en impresión 3D.
@@ -3095,7 +3646,7 @@ Customizer permite adjuntar o subir a la aplicación archivos de código OpenSCA
 
 Luego procesa el código OpenSCAD, analiza las variables y agrega los elementos o controles UI correspondientes, como barras deslizantes, botones de opciones, etc.\vskip 
 
-Mediante la modificación de los parámetros por medio de los controles UI\footnote{UI o interfaz de usuario es el espacio donde se producen las interacciones entre seres humanos y máquinas.} se pueden generar objetos sólidos personalizados. En la Figura \ref{fig:customizer} se puede ver la interfaz.
+Mediante la modificación de los parámetros por medio de los controles UI se pueden generar objetos sólidos personalizados. En la Figura \ref{fig:customizer} se puede ver la interfaz.
 
 Customizer es una manera sencilla de generar diseños colaborativos mediante la personalización de modelos 3D por parte de la comunidad de usuarios de la plataforma Thingverse.
 
@@ -3149,7 +3700,12 @@ El servicio ofrece una versión reducida, gratuita para estudiantes registrados.
 \label{fig:modelo.io}
 \end{figure}
 
+\clearpage
 
+\section{Enfoque de desarrollo}
+
+
+\input{Chapters/2-marco-lean.tex}
 
 \section{Problemas y recomendaciones
 }
